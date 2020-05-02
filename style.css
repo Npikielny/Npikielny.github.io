@@ -1,6 +1,7 @@
 html, body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 body {
@@ -11,7 +12,10 @@ body {
 .container {
   margin: 0 auto;
   max-width: 940px;
-  padding: 0 10px;
+  /* width: 100%; */
+  padding: 0 0px;
+  /* margin-right: 0px; */
+  /* padding-right: 0px; */
 }
 
 .header {
@@ -81,15 +85,92 @@ body {
   transition: background .5s;
 }
 
+.divider {
+  background-color: #117bff;
+  height: 3px;
+  padding: 0;
+}
+
 .chunk {
   background-color: #000;
   display: inline-block;
   color: #fff;
-  padding-left: 10px;
-  padding-right: 10px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0;
 }
 
-.chunk h1 {
+.chunk ul {
+  height: 80px;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.chunk ul li {
+  color: #f00;
+  display: inline-block;
+  list-style: none;
+  padding: 0 0px;
+  transition: background .5s;
+  width: 50%;
+  text-align: center;
+}
+
+.chunk h1, .chunk h2, .chunk h3, .chunk h6, .chunk p {
+  color: #fff;
+}
+.chunk p {
+  margin-left: 10px;
+  text-align: left;
+}
+
+.body {
+  width: 50%;
+  float: left;
+}
+.examples {
+  float: right;
+  width: 50%;
+}
+
+.Display {
+  height: 100%;
+}
+
+#rayTracing {
+  height: 400px;
+}
+#Complex_Images {
+  height: 400px;
+}
+
+.examplesUL {
+  height: 80px;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.examplesUL li {
+  color: #f00;
+  display: inline-block;
+  list-style: none;
+  padding: 0 0px;
+  transition: background .5s;
+  width: 50%;
+  text-align: center;
+}
+
+.left {
+  float: left;
+  padding: 0;
+}
+.right {
+  float: right;
+}
+
+/* .chunk h1 {
   text-align: center;
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
@@ -102,10 +183,10 @@ body {
 .chunk p {
   color: #fff;
   /* text-align: left; */
-  font-family: 'Roboto', sans-serif;
-  font-weight: 100;
-}
-.left {
+  /* font-family: 'Roboto', sans-serif; */
+  /* font-weight: 100; */
+/* } */
+/* .left {
   text-align: left;
   margin-left: 10;
 }
@@ -116,25 +197,22 @@ body {
 
 .chunk ul {
   list-style: none;
+  overflow: hidden;
   margin: 0 auto;
   padding: 0;
 }
 .chunk ul li {
+  float: left;
    display: inline-block;
    list-style: none;
-}
-.chunk ul li p {
-  float: left;
 }
 .chunk img {
   width: 30%;
   height: auto;
-  float: right;
   padding: 10px;
 }
 .chunk video {
   width: 30%;
   height: auto;
-  float: right;
   padding: 10px;
-}
+} */
