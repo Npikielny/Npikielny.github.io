@@ -16,18 +16,18 @@ body {
   padding: 0 0px;
   /* margin-right: 0px; */
   /* padding-right: 0px; */
+  top: 345px;
 }
 
 .header {
   background: url(WebsiteBackground.jpg) no-repeat center center;
   background-size: cover;
-  height: 1000px;
+  height: 800px;
   text-align: center;
 }
 
 .header .container {
   position: relative;
-  top: 400px;
 }
 
 .header h1 {
