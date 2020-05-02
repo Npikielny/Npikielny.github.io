@@ -126,10 +126,14 @@ body {
 }
 img {
   width: 48%;
+  max-width: 400;
+  max-width: 400;
   height: width;
 }
 video {
   width: 48%;
+  max-width: 400;
+  max-height: 400;
   height: width;
 }
 .body {
