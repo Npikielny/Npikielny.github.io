@@ -124,7 +124,14 @@ body {
   margin-left: 10px;
   text-align: left;
 }
-
+img {
+  width: 48%;
+  height: width;
+}
+video {
+  width: 48%;
+  height: width;
+}
 .body {
   width: 50%;
   float: left;
