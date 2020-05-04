@@ -60,7 +60,7 @@
             <h1>GPU Ray Tracing</h1>
             <h3>Swift & Metal</h3>
             <h6>April 20, 2020</h6>
-            <p>Insert Description</p>
+            <p>This was another project inspired by one of Sebastian Lague's Youtube videos. For those who don't know, ray tracing is a method of redering a 3D scene by casting light rays from a camera to thee 3D scene. As the light bounces off of materials, it is refracted based upon the material properties of the objects–picking up color and reflecting off of surfaces. Doing the same from the light source (instead of the camera) to the scene can render shadows as well! This project had some significant obstacles for me because I used a tutorial meant for Unity, which has some nice tools that the Apple Environment doesn't havee yet (or I haven't found them yet). I spent a while understand 4x4 camera projection matrices and mapping rays to 3D image. Currently, my project renders refraction, reflection, and shadows for a scene with a plane and randomly generated spheres. I am working on adding triangular faces as well because then I can add any 3D model I want–the math is a little tricky though, and I want to figure it out instead of looking it up... The project runs in real time, but it dops frames after the image gets larger than 512x512. Also, I added antialiasing to smooth the images, but this feature only works on images (nothing with high refresh rates) because it just isn't feasible. With this image focused mode, I can expand the project to incorporate a lot more material properties, which require a high number of passes before properly renderiing.</p>
           </body>
         </li>
         <li class = "examples">
@@ -79,7 +79,7 @@
             <h1>GPU Generation of Complex Images</h1>
             <h3>Swift & Metal</h3>
             <h6>March 17, 2020</h6>
-            <p>Insert Description</p>
+            <p>(This is about to get a tad cheesey, and I apologize in advance). When first learning about complex numbers, my math teacher was trying to explain some importance to the seemingly useless concept and pointed to our class textbook with some gorgeous fractals and said that it was completely based on complex numbers. That moment gave me such a greater appreciation of these designs that I had overlooked on eseentially all of my math textbooks. Since then, I have wanted to generate my own fractals, but I had never had the means to do so before I learned to code. After learning about compute shaders with Boids, I could not wait to tackle this project. I spent countless hours randomly generating images and playing around with the colors. As I learned more about GPU's I changed the project from rendering individual images to rendering animatable fractals from which I saved tons of photos and videos–They're so pretty! This is probably one of my favortie projects, and I love to revisit it. I also can't stop showing off the images, hence the backgrounds to the website :).</p>
           </body>
         </li>
         <li class = "examples">
@@ -98,7 +98,7 @@
             <h1>Denoising</h1>
             <h3>Swift & Metal (Originally done with python)</h3>
             <h6>January 2, 2020</h6>
-            <p>Insert Description</p>
+            <p>This is software I made whle interning in the Hill Lab in Darthmouth Life Sciences. The projects I worked on focused on the demyelination and remyelingation of neurons in mouse brains. One of the issues with confocal and two photon images generated in the lab was an excessive amount of background noise. I was originally tasked with simply quantifying the amount of signal (from myelin tagged GFP) in thee images, but this was innacurate and incosistent due to the noise. The noise is inevitable, but that doesn't mean we can't remove it! This program assumes that the axons linear (which they can be approximated to be over small intervals), and removes any signal, which is not in a large linear group. I originaly wrote this code in python because it was really easy to get the images into python without degrading the quality of the images, but this took forever! For one image it took about 15 minutes–it was around 2 billion calculations, so this makes sense, but 15 minutes for a lab with tons of 30+ image frames is not plausible. I converted the project to swift in hopes that a compiled language may be faster (and it would have the added bonus of being user friendly), but there was no significant difference. After upgrading to metal, the program now runs in about a second. This is super important not only for efficiency, but there is significant variation between images, so it is important that the user is able to do a little bit of trial and error to achieve the desired image.</p>
           </body>
         </li>
         <li class = "examples">
@@ -116,7 +116,7 @@
           <body>
             <h1>Misc GPU Projects</h1>
             <h3>Swift & Metal </h3>
-            <p>Insert Description</p>
+            <p>My first ever project on the GPU was a Sebastian Lague inspired Boids simulation (seen on the right). The boids algorithm is a simple method to approximate flocks. Lague's video was fantastic, and I really wanted my own boid simulation. I played around with Unity, but I really wanted to keep using Swift. After a few iinfinite loops on the GPU and many computer crashes, I figured it out. The collision with obstacles is done on the CPU and dramatically slows the program, so I don't use that very much. The code isn't very nice, but for my first GPU project, I am super happy with it. It opened up so many new project ideas and was so fun to do–while albeit quite frustrating. The second video (on the left) is a Conway's Game of Life done on the GPU–A simulation, which approximates cell cultures apon the density of cells. For one of computer science classes in high school, we had to build Conway's Game of Life in python. My python of version was extremely slow and I wanted to speed it up, so I could have a more robust simulation. I did this project while mulling over my ray tracing project, so I tried to incorporate a few more powerful features into this project, and I learned quite a lot about threadgroups and I was able to apply what I learned to all of my other GPU projects. </p>
           </body>
         </li>
         <li class = "examples">
