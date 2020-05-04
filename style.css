@@ -120,7 +120,8 @@ body {
   margin-left: 10%;
   margin-right: 10%;
   background: url(profilebackgroundWebsite.jpg) no-repeat center center;
-  background-size: 100% auto;
+  /* background-size: 100% auto; */
+  background-size: cover;
   height: 85%;
   width: 80%;
   margin-bottom: 0px;
