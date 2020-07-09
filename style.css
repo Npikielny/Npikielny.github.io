@@ -257,7 +257,12 @@ video {
 .right {
   float: right;
 }
-
+a:link {
+  color: cyan;
+  background-color: transparent;
+  padding: 5;
+  /* text-decoration: none; */
+}
 /* .chunk h1 {
   text-align: center;
   font-family: 'Roboto', sans-serif;
