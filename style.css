@@ -260,7 +260,7 @@ video {
 a:link {
   color: cyan;
   background-color: transparent;
-  padding: 5;
+  padding: 10px;
   /* text-decoration: none; */
 }
 /* .chunk h1 {
