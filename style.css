@@ -53,6 +53,20 @@ body {
   text-transform: uppercase;
 }
  .nav ul li {
+  display: inline-block;
+  height: 80px;
+  line-height: 80px;
+  list-style: none;
+  padding: 0 0px;
+  transition: background .5s;
+  width: 32%;
+  text-align: center;
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-right:0px;
+  margin-left:0px;
+}
+.nav ul li a {
   color: #f00;
   display: inline-block;
   height: 80px;
@@ -262,6 +276,11 @@ a:link {
   background-color: transparent;
   padding: 10px;
   /* text-decoration: none; */
+}
+.Instagram {
+  color: cyan;
+  background-color: transparent;
+  padding: 10px;
 }
 /* .chunk h1 {
   text-align: center;
