@@ -34,19 +34,70 @@
             <div class = "profileChunk">
                 <img src="ProfileWebsite.jpg" class = "profilePicture" id = "profileContent"/>
             <div class = "backgroundInfo">
-              <p>I am a recent graduate of Hanover High School (NH), and I am attending the College of Arts and Sciences at Cornell University. In my free time I enjoy coding projects and fishkeeping-specifically coral. I also love studying biology, and I have been interning in Professor Robert Hill's Neurobiology Lab at Dartmouth College for the past two summers.
+              <p>I am a student in the College of Arts and Sciences at Cornell University. In my free time I enjoy coding projects (currently a lot of GPU projects), fishkeeping-specifically coral, and playing games like Minecraft, Smash Ultimate, and Soccer. I also love studying biology, and I have been interning in Professor Robert Hill's Neurobiology Lab at Dartmouth College for the past two summers.
               </p>
             </div>
           </div>
         </div>
         <!--Project Section-->
+        <!--ECODashboard-->
+        <div class = "Project", id = "Projects">
+          <ul>
+            <li class = "Description">
+              <div>
+                <h1>ECODashboard-Title Pending</h1>
+                <h3>Swift</h3>
+                <h6>February 1, 2020</h6>
+                <p>I've found myself going to the same websites daily, and I wanted to streamline the process.
+                    What better way to deal with this than make an app and get back to my UI roots.
+                    I'd like my program to have weather, ocean temperatures (to monitor reef bleaching), and a reminders panel.
+                    So far, I have done spiffy job integrating RapidApi's OpenWeather API, and I have set up a scraping pipeline to
+                    take oceanic temperature and coral bleaching alert graphs from NOAA. *The image is stitched together because I made too many requests before implementing the ocean graphs*
+                </p>
+              </div>
+            </li>
+            <li class = "Example">
+              <div>
+                <img src="ECODashboard.png"/>
+              </div>
+            </li>
+          </ul>
+          <!-- <div class = "divider"></div> -->
+        </div>
+        <!--Trace Editor-->
+        <div class = "Project", id = "Projects">
+          <ul>
+            <li class = "Description">
+              <div>
+                <h1>Trace Editor</h1>
+                <h3>Swift, Metal</h3>
+                <h6>July, 2020 (Ongoing)</h6>
+                <p>
+                    In order to speed up some of the work in the lab I work at, I decided to make an app.
+                    I have learned a ton making this app–image heaps, background threads, and a bunch of graphics techniques.
+                    I sadly was not able to finish in one summer, but I hope that I can make a working product when I
+                    go back to working in the lab. I still need to optimize the program for devices with less VRAM,
+                    do a little bit of redesinging, and add some path recognition.
+                </p>
+              </div>
+            </li>
+            <li class = "Example">
+              <div>
+                <video src = "TraceEditorDemo.mov" controls>Video not supported</video>
+                  <!-- <video src = "WebsiteJuliaSet.mov" controls>Video not supported</video> -->
+              </div>
+            </li>
+          </ul>
+          <!-- <div class = "divider"></div> -->
+        </div>
+        <!--Ray Marching-->
         <div class = "Project", id = "Projects">
           <ul>
             <li class = "Description">
               <div>
                 <h1>Ray Marching</h1>
                 <h3>Swift, Metal</h3>
-                <h6>May 9, 2020 (Ongoing)</h6>
+                <h6>May 9, 2020</h6>
                 <p>It's time to put my ray tracing skills to use! At the moment I am upgrading to a ray marching renderer, but I would like to create some animations soon (hopefully a Curl Noise visualizer)!</p>
               </div>
             </li>
@@ -60,6 +111,7 @@
           </ul>
           <!-- <div class = "divider"></div> -->
         </div>
+        <!--Crossword-->
         <div class = "Project">
           <ul>
             <li class = "Description">
@@ -80,6 +132,7 @@
           </ul>
           <!-- <div class = "divider"></div> -->
         </div>
+        <!--Ray Tracing-->
         <div class = "Project">
           <ul>
             <li class = "Description">
@@ -93,13 +146,14 @@
             </li>
             <li class = "Example">
                 <div>
-                    <img src="RayTracingWebsite.png"/>
+                    <img src="BoxyBoysToo!.png"/>
                     <video src = "RaytracingVideoWebsite.mov" controls>Video not supported</video>
                 </div>
             </li>
           </ul>
           <!-- <div class = "divider"></div> -->
         </div>
+        <!--Complex Images-->
         <div class = "Project">
           <ul>
             <li class = "Description">
@@ -119,6 +173,62 @@
           </ul>
           <!-- <div class = "divider"></div> -->
         </div>
+        <!--Ecosystem-->
+        <div class = "Project">
+          <ul>
+            <li class = "Description">
+                <div>
+                  <h1>Ecosystem Simulation</h1>
+                  <h3>Swift, Metal, & GSL</h3>
+                  <h6>March, 2020</h6>
+                  <p>This was a school project a friend and I made for March Intensive (essentially a project week).
+                      Inspired by Sebastian Lague and Primer's exploration of evolution through ecosystem simulations, we set out to make our own rendition.
+                      We used Scenekit for our game engine, blender for modeling, and github for source control.
+                      It was my first time working with someone else on a major project. It was somewhat annoying with XCode's source control,
+                      but ultimately it was an enjoyable and helpful process. In the end, we were able to add a thriving population of bunnies.
+                      We also successfully added a species of bird with somoe uncanny valley, because we did not animate their movements–they just kind of glide everywhere.
+                      There are also foxes, but they definitely need some work to not decimate the bunny population.
+                      I had an absolute blast playing with shaders for the water, trees, and cloud movement, and I think they look absolutely stellar.
+                      There are three basic food groups, growing plants (berry bushes and cactus fruits that will replenish their food after some time–shown with some crispy animation),
+                      apples, which fall from trees, and meats–which come from predation. In the future, I hope to remake this project in a GPU driven model to fix some difficulties with
+                      movement, performance, and add nice features like ray tracing. There are some precursors in the project like some perlin noise terrain generation, but it is far from finished.
+                </div>
+            </li>
+            <li class = "Example">
+                <div>
+                    <img src="EcoLandscape.png"/>
+                    <video src = "MarchEcoVid.mov" controls>Video not supported</video>
+                </div>
+            </li>
+          </ul>
+          <!-- <div class = "divider"></div> -->
+        </div>
+        <!--Solar System-->
+        <div class = "Project">
+          <ul>
+            <li class = "Description">
+                <div>
+                  <h1>Solar System Simulation</h1>
+                  <h3>Swift & Python</h3>
+                  <h6>March, 2020</h6>
+                  <p>I decided to make a solar system for my final project in my physics class.
+                      Using the Runge-Kutta Method as well as scraping informatin from two NASA website,
+                      I was able to 2D and 3D simmulations. These simulations worked really well, averaging
+                      1% error over quite length simulations, but they slowly diverged from the projections.
+                      This was probably due to rounding errors in the data and program. I had a blast doing this
+                      project, and I will definitely revisit it in the future!
+                </div>
+            </li>
+            <li class = "Example">
+                <div>
+                    <img src="SolarError.png"/>
+                    <video src = "SS2DRK.mov" controls>Video not supported</video>
+                </div>
+            </li>
+          </ul>
+          <!-- <div class = "divider"></div> -->
+        </div>
+        <!--MISC-->
         <div class = "Project">
           <ul>
             <li class = "Description">
@@ -133,6 +243,29 @@
               <div>
                   <video src = "ConwayWebsite.mov" controls>Video not supported</video>
                   <video src = "BoidsWebsite.mov" controls>Video not supported</video>
+              </div>
+            </li>
+          </ul>
+          <!-- <div class = "divider"></div> -->
+        </div>
+        <!--Utilities-->
+        <div class = "Project">
+          <ul>
+            <li class = "Description">
+              <div>
+                  <h1>Utilities</h1>
+                  <h3>Swift</h3>
+                  <h6>July, 2018</h6>
+                  <p>
+                      This was the first project I ever built. I wanted to create an app for basic utilities like reminders, a calendar (this was more of my mom's influence)
+                      multiple timers (we really needed it in the lab), etc. I based it off of Let's Build That App's Youtube Series. I never finished the project, but it was
+                      a great learning tool!
+                  </p>
+              </div>
+            </li>
+            <li class = "Example">
+              <div>
+                  <video src = "utilitiesDemo.mov" controls>Video not supported</video>
               </div>
             </li>
           </ul>
