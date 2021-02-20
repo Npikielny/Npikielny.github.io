@@ -34,7 +34,11 @@
             <div class = "profileChunk">
                 <img src="ProfileWebsite.jpg" class = "profilePicture" id = "profileContent"/>
             <div class = "backgroundInfo">
-              <p>I am a student in the College of Arts and Sciences at Cornell University. In my free time I enjoy coding projects (currently a lot of GPU projects), fishkeeping-specifically coral, and playing games like Minecraft, Smash Ultimate, and Soccer. I also love studying biology, and I have been interning in Professor Robert Hill's Neurobiology Lab at Dartmouth College for the past two summers.
+              <p>I am a student in the College of Arts and Sciences at Cornell University.
+                  In my free time, I enjoy coding projects (currently a lot of GPU projects),
+                   fishkeeping-specifically coral, playing games with friends,
+                    and playing soccer. I also love studying biology, and I have been interning in Professor
+                     Robert Hill's Neurobiology Lab at Dartmouth College for the past two summers.
               </p>
             </div>
           </div>
@@ -51,7 +55,7 @@
                 <p>I've found myself going to the same websites daily, and I wanted to streamline the process.
                     What better way to deal with this than make an app and get back to my UI roots.
                     I'd like my program to have weather, ocean temperatures (to monitor reef bleaching), and a reminders panel.
-                    So far, I have done spiffy job integrating RapidApi's OpenWeather API, and I have set up a scraping pipeline to
+                    So far, I have done a spiffy job integrating RapidApi's OpenWeather API, and I have set up a scraping pipeline to
                     take oceanic temperature and coral bleaching alert graphs from NOAA. *The image is stitched together because I made too many requests before implementing the ocean graphs*
                 </p>
               </div>
@@ -98,7 +102,9 @@
                 <h1>Ray Marching</h1>
                 <h3>Swift, Metal</h3>
                 <h6>May 9, 2020</h6>
-                <p>It's time to put my ray tracing skills to use! At the moment I am upgrading to a ray marching renderer, but I would like to create some animations soon (hopefully a Curl Noise visualizer)!</p>
+                <p>It's time to put my ray tracing skills to use! At the moment I am upgrading to a
+                     ray marching renderer, but I would like to create some animations soon
+                     (hopefully a Curl Noise visualizer)!</p>
               </div>
             </li>
             <li class = "Example">
@@ -119,7 +125,8 @@
                   <h1>Crosswords With Friends</h1>
                   <h3>Swift</h3>
                   <h6>May 3, 2020 (Ongoing)</h6>
-                  <p>My brother (Adam Pikielny) and I are working on a multiplayer crossword competition game. It's not on the appstore yet, but look out for the beta soon!</p>
+                  <p>My brother (Adam Pikielny) and I are working on a multiplayer crossword competition game.
+                       It's not on the appstore yet, but look out for the beta soon!</p>
                 </div>
             </li>
             <li class = "Example">
@@ -140,7 +147,21 @@
                   <h1>GPU Ray Tracing</h1>
                   <h3>Swift & Metal</h3>
                   <h6>April 20, 2020</h6>
-                  <p>This was another project inspired by one of Sebastian Lague's Youtube videos. For those who don't know, ray tracing is a method of rendering a 3D scene by casting light rays from a camera to the scene. As the light bounces off of materials, it is refracted based upon the material properties of the objects-picking up color and reflecting off of surfaces. Doing the same from the light source (instead of the camera) to the scene can render shadows as well! This project had some significant obstacles for me because I used a tutorial meant for Unity, which has some nice tools that the Apple Environment doesn't have yet (or I haven't found them yet). I spent a while understand 4x4 camera projection matrices and mapping rays to a 3D image. Currently, my project renders refraction, reflection, and shadows for a scene with a plane and randomly generated spheres. I am working on adding triangular faces as well because then I can add any 3D model I want-the math is a little tricky though, and I want to figure it out instead of looking it up... The project runs in real time, but it dops frames after the image gets larger than 512x512. Also, I added antialiasing to smooth the images, but this feature only works on images (nothing with high refresh rates) because it just isn't feasible. With this image focused mode, I can expand the project to incorporate a lot more material properties, which require a high number of passes before properly rendering.
+                  <p>This was another project inspired by one of Sebastian Lague's Youtube videos. For those who don't know,
+                        ray tracing is a method of rendering a 3D scene by casting light rays from a camera to the scene.
+                        As the light bounces off of materials, it is refracted based upon the material properties of the objects-picking up
+                        color and reflecting off of surfaces. Doing the same from the light source (instead of the camera) to the scene can render shadows as well!
+                        This project had some significant obstacles for me because I used a tutorial meant for Unity,
+                        which has some nice tools that the Apple Environment doesn't have yet (or I haven't found them yet).
+                        I spent a while understand 4x4 camera projection matrices and mapping rays to a 3D image.
+                        Currently, my project renders refraction, reflection, and shadows for a scene with a plane and randomly generated spheres.
+                        I am working on adding triangular faces as well because then I can add any 3D model I want-the math is a little tricky though,
+                        and I want to figure it out instead of looking it up...
+                        The project runs in real-time, but it dops frames after the image gets larger than 512x512.
+                        Also, I added antialiasing to smooth the images, but this feature only works on images
+                        (nothing with high refresh rates) because it just isn't feasible.
+                        With this image-focused mode, I can expand the project to incorporate a lot more material properties,
+                        which require a high number of passes before properly rendering.
                   </p>
               </div>
             </li>
@@ -183,15 +204,15 @@
                   <h6>March, 2020</h6>
                   <p>This was a school project a friend and I made for March Intensive (essentially a project week).
                       Inspired by Sebastian Lague and Primer's exploration of evolution through ecosystem simulations, we set out to make our own rendition.
-                      We used Scenekit for our game engine, blender for modeling, and github for source control.
+                      We used Scenekit for our game engine, blender for modeling, and Github for source control.
                       It was my first time working with someone else on a major project. It was somewhat annoying with XCode's source control,
                       but ultimately it was an enjoyable and helpful process. In the end, we were able to add a thriving population of bunnies.
-                      We also successfully added a species of bird with somoe uncanny valley, because we did not animate their movements–they just kind of glide everywhere.
+                      We also successfully added a species of bird with some uncanny valley, because we did not animate their movements–they just kind of glide everywhere.
                       There are also foxes, but they definitely need some work to not decimate the bunny population.
                       I had an absolute blast playing with shaders for the water, trees, and cloud movement, and I think they look absolutely stellar.
                       There are three basic food groups, growing plants (berry bushes and cactus fruits that will replenish their food after some time–shown with some crispy animation),
-                      apples, which fall from trees, and meats–which come from predation. In the future, I hope to remake this project in a GPU driven model to fix some difficulties with
-                      movement, performance, and add nice features like ray tracing. There are some precursors in the project like some perlin noise terrain generation, but it is far from finished.
+                      apples, which fall from trees, and meats–which come from predation. In the future, I hope to remake this project in a GPU-driven model to fix some difficulties with
+                      movement, performance, and add nice features like ray tracing. There are some precursors in the project like some Perlin noise terrain generation, but it is far from finished.
                 </div>
             </li>
             <li class = "Example">
@@ -212,9 +233,9 @@
                   <h3>Swift & Python</h3>
                   <h6>March, 2020</h6>
                   <p>I decided to make a solar system for my final project in my physics class.
-                      Using the Runge-Kutta Method as well as scraping informatin from two NASA website,
-                      I was able to 2D and 3D simmulations. These simulations worked really well, averaging
-                      1% error over quite length simulations, but they slowly diverged from the projections.
+                      Using the Runge-Kutta Method as well as scraping information from two NASA website,
+                      I was able to 2D and 3D simulations. These simulations worked really well, averaging
+                      1% error over quite lengthy simulations, but they slowly diverged from the projections.
                       This was probably due to rounding errors in the data and program. I had a blast doing this
                       project, and I will definitely revisit it in the future!
                 </div>
@@ -235,7 +256,18 @@
               <div>
                   <h1>Misc GPU Projects</h1>
                   <h3>Swift & Metal </h3>
-                  <p>My first ever project on the GPU was a Sebastian Lague inspired-Boids simulation (seen on the right). The Boids algorithm is a simple method to approximate flocks. Lague's video was fantastic, and I really wanted my own boid simulation. I played around with Unity, but I wanted to keep using Swift. After a few infinite loops on the GPU and many computer crashes, I figured it out. The collision with obstacles is done on the CPU and dramatically slows the program, so I don't use that very much. The code isn't very nice, but for my first GPU project, I am super happy with it. It opened up so many new project ideas and was so fun to do-while albeit quite frustrating. The second video (on the left) is a Conway's Game of Life done on the GPU-A simulation, which approximates cell cultures upon the density of cells. For one of computer science classes in high school, we had to build Conway's Game of Life in Python. My Python of version was extremely slow and I wanted to speed it up, so I could have a more robust simulation. I did this project while mulling over my ray tracing project, so I tried to incorporate a few more powerful features into this project, and I learned quite a lot about threadgroups and I was able to apply what I learned to all of my other GPU projects.
+                  <p>My first ever project on the GPU was a Sebastian Lague inspired-Boids simulation (seen on the right).
+                        The Boids algorithm is a simple method to approximate flocks. Lague's video was fantastic, and I really wanted my own boid simulation.
+                        I played around with Unity, but I wanted to keep using Swift.
+                        After a few infinite loops on the GPU and many computer crashes, I figured it out.
+                        The collision with obstacles is done on the CPU and dramatically slows the program, so I don't use that very much.
+                        The code isn't very nice, but for my first GPU project, I am super happy with it.
+                        It opened up so many new project ideas and was so fun to do-while albeit quite frustrating.
+                        The second video (on the left) is Conway's Game of Life done on the GPU-a simulation, which approximates cell cultures upon the density of cells.
+                        For one of the computer science classes in high school, we had to build Conway's Game of Life in Python.
+                        My Python of version was extremely slow and I wanted to speed it up, so I could have a more robust simulation.
+                        I did this project while mulling over my ray tracing project, so I tried to incorporate a few more powerful features into this project,
+                        and I learned quite a lot about thread groups and I was able to apply what I learned to all of my other GPU projects.
                   </p>
               </div>
             </li>
@@ -257,9 +289,12 @@
                   <h3>Swift</h3>
                   <h6>July, 2018</h6>
                   <p>
-                      This was the first project I ever built. I wanted to create an app for basic utilities like reminders, a calendar (this was more of my mom's influence)
-                      multiple timers (we really needed it in the lab), etc. I based it off of Let's Build That App's Youtube Series. I never finished the project, but it was
-                      a great learning tool!
+                    This was the first project I ever built. 
+                    I wanted to create an app for basic utilities like reminders, a calendar (this was more of my mom's influence)
+                    multiple timers (we really needed it in the lab), etc.
+                    I based it off of Let's Build That App's Youtube Series.
+                    I never finished the project, but it was
+                    a great learning tool!
                   </p>
               </div>
             </li>
