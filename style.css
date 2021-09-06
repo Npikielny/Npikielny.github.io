@@ -10,7 +10,7 @@ html, body {
 
 
 .header {
-  background: url(WebsiteBackground.jpg) no-repeat center center;
+  background: url(Sources/UI/WebsiteBackground.jpg) no-repeat center center;
   background-size: cover;
   height: 800px;
   text-align: center;
@@ -38,6 +38,12 @@ html, body {
     text-align: center;
     text-transform: uppercase;
     color: #fff;
+}
+
+.Icon {
+    padding-top: 30%;
+    margin-right: 85%;
+    width: 15%;
 }
 
 
@@ -122,7 +128,7 @@ max-width: 100%;
   /* background-color: #000; */
   margin-left: 10%;
   margin-right: 10%;
-  background: url(profilebackgroundWebsite.jpg) no-repeat center center;
+  background: url(Sources/UI/profilebackgroundWebsite.jpg) no-repeat center center;
   /* background-size: 100% auto; */
   background-size: cover;
   height: 85%;
