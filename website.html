@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href='websitestyle.css' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  <!-- Header -->
+  <div class="section">
+    <div class="title_panel" />
+    <div class="title_logo"></div>
+    <h1 id="title">Noah Pikielny</h1>
+  </div>
+  <!-- About Me -->
+  <div class="section">
+    <div class="about_me">
+      <div class="about_me_info">
+        <div class="profile_pic"></div>
+        <div class="abt_me_desc">
+          <p>
+            I am a student in the College of Arts and Sciences at Cornell University.
+            In my free time, I enjoy coding projects (currently a lot of GPU projects),
+            fishkeeping (really anything coral-related), photography, playing games with friends,
+            and playing soccer.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="image_gallery">
+          <img class="right_gallery" id="gallery_starter" src="Sources/Photography/mocha.JPG" />
+          <img class="left_gallery" src="Sources/Photography/clowns.JPG" />
+          <img class="right_gallery" src="Sources/Photography/stars.JPG" />
+          <img class="left_gallery" src="Sources/Photography/hermit.JPG" />
+        </div>
+      </div>
+    </div>
+    <!-- Research -->
+  </div>
+  <!-- Research -->
+  <div class="section">
+    <div class="lab_panel">
+      <div></div>
+      <h1>Research</h1>
+      <div class="research_item">
+        <div class="description" id="left">
+          <p>I have been interning in Professor Robert Hill's Neurobiology Lab at Dartmouth College for the past three
+            summers.
+            My first summer, I learned the ins and outs of the wet lab. In my free time I created a denoising algorithm,
+            that runs on the GPU of course, that isolates oligodendrocytes from image artifacts by their linear
+            morphology. This algorithm typically takes a few seconds to run and is fairly accurate, although it requires
+            some user input to make sure the program is using the correct weights for the image.
+          </p>
+        </div>
+        <img src="Sources/Research/Denoiser/GFPEditedWebsite.png" id="right" />
+      </div>
+
+      <div class="research_item">
+        <video src="Sources/Research/TraceEditor/TraceEditorDemo.mov" controls id="left">Video not supported</video>
+        <div class="description" id="right">
+          <p>
+            Add description here
+            - Remote
+            - TraceEditor
+            -> VR and stuffs
+            -> Oligodendrocyte morphology
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Coding Projects -->
+  <div class="section">
+    <div class="coding_background">
+      <h1>Coding Projects</h1>
+      <!-- Video -->
+      <div class="featureContainer">
+        <iframe class="featureItem" width="100%" height="100%" src="https://www.youtube.com/embed/IGSoiPwX9M4"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+      <!-- Projects -->
+      <!-- Graphics Hub -->
+      <div class="project">
+        <div class="project_description">
+          <h2>Graphics Hub</h2>
+          <p>Some description</p>
+        </div>
+        <div class="row">
+          <div class="image_gallery">
+            <img class="left_gallery" id="gallery_starter"
+              src="Sources/Projects/GraphicsHub/Screen Shot 2021-09-06 at 4.49.33 PM.png" />
+            <img class="right_gallery" src="Sources/Projects/GraphicsHub/swiftUIDemo.png" />
+          </div>
+        </div>
+      </div>
+      <!-- Ray Marching -->
+      <div class="project">
+        <div class="row">
+          <div class="image_gallery">
+            <video class="left_gallery" id="gallery_starter" src="Sources/Projects/RayMarching/RayMarchWebsite1.mov"
+              controls>Video
+              not supported</video>
+            <video class="right_gallery" src="Sources/Projects/RayMarching/RayMarchWebsite2.mov" controls>Video not
+              supported</video>
+          </div>
+        </div>
+        <div class="project_description">
+          <h2>Ray Marching</h2>
+          <p>
+            It's time to put my ray tracing skills to use! At the moment I am upgrading to a
+            ray marching renderer, but I would like to create some animations soon
+            (hopefully a Curl Noise visualizer)!
+          </p>
+        </div>
+      </div>
+      <!-- Ray Tracing -->
+      <div class="project">
+        <div class="project_description">
+          <h2>Ray Tracing</h2>
+          <p>
+            This was another project inspired by one of Sebastian Lague's Youtube videos. For those who don't know,
+            ray tracing is a method of rendering a 3D scene by casting light rays from a camera to the scene.
+            As the light bounces off of materials, it is refracted based upon the material properties of the
+            objects-picking up
+            color and reflecting off of surfaces. Doing the same from the light source (instead of the camera) to the
+            scene can render shadows as well!
+            This project had some significant obstacles for me because I used a tutorial meant for Unity,
+            which has some nice tools that the Apple Environment doesn't have yet (or I haven't found them yet).
+            I spent a while understand 4x4 camera projection matrices and mapping rays to a 3D image.
+            Currently, my project renders refraction, reflection, and shadows for a scene with a plane and randomly
+            generated spheres.
+            I am working on adding triangular faces as well because then I can add any 3D model I want-the math is a
+            little tricky though,
+            and I want to figure it out instead of looking it up...
+            The project runs in real-time, but it dops frames after the image gets larger than 512x512.
+            Also, I added antialiasing to smooth the images, but this feature only works on images
+            (nothing with high refresh rates) because it just isn't feasible.
+            With this image-focused mode, I can expand the project to incorporate a lot more material properties,
+            which require a high number of passes before properly rendering.
+          </p>
+        </div>
+        <div class="row">
+          <div class="image_gallery">
+            <img class="left_gallery" id="gallery_starter" src="Sources/Projects/RayTracing/BoxyBoysToo!.png" />
+            <video class="right_gallery" src="Sources/Projects/RayTracing/RaytracingVideoWebsite.mov" controls>Video not
+              supported</video>
+            <img class="left_gallery" src="Sources/Projects/RayTracing/RayTracingWebsite.png" />
+          </div>
+        </div>
+      </div>
+      <div class="project">
+        <div class="row">
+          <div class="image_gallery">
+            <img class="left_gallery" id="gallery_starter" src="Sources/Projects/ComplexImages/MandelBrotWebsite.jpg" />
+            <video class="right_gallery" src="Sources/Projects/ComplexImages/WebsiteJuliaSet.mov" controls>Video not
+              supported</video>
+          </div>
+        </div>
+        <div class="project_description">
+          <h2>Complex Images</h2>
+          <p>(This is about to get a tad cheesy, and I apologize in advance).
+            When first learning about complex numbers, my math teacher was trying
+            to explain some importance to the seemingly useless concept and pointed
+            to our class textbook with some gorgeous fractals and said that it
+            was completely based on complex numbers. That moment gave me such a
+            greater appreciation of these designs that I had overlooked on
+            essentially all of my math textbooks. Since then, I have wanted
+            to generate my own fractals, but I had never had the means to do
+            so before I learned to code. After learning about compute shaders
+            with Boids, I could not wait to tackle this project. I spent countless
+            hours randomly generating images and playing around with the colors.
+            As I learned more about GPU's I changed the project from rendering individual images to rendering animatable
+            fractals from which I saved tons of photos and videos-They're so pretty! This is probably one of my favorite
+            projects, and I love to revisit it. I also can't stop showing off the images, hence the backgrounds to the
+            website :).
+          </p>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project_description">
+          <h2>Ecosystem Simulation</h2>
+          <p>
+            This was a school project a friend and I made for March Intensive (essentially a project week).
+            Inspired by Sebastian Lague and Primer's exploration of evolution through ecosystem simulations, we set out
+            to make our own rendition.
+            We used Scenekit for our game engine, blender for modeling, and Github for source control.
+            It was my first time working with someone else on a major project. It was somewhat annoying with XCode's
+            source control,
+            but ultimately it was an enjoyable and helpful process. In the end, we were able to add a thriving
+            population of bunnies.
+            We also successfully added a species of bird with some uncanny valley, because we did not animate their
+            movements–they just kind of glide everywhere.
+            There are also foxes, but they definitely need some work to not decimate the bunny population.
+            I had an absolute blast playing with shaders for the water, trees, and cloud movement, and I think they look
+            absolutely stellar.
+            There are three basic food groups, growing plants (berry bushes and cactus fruits that will replenish their
+            food after some time–shown with some crispy animation),
+            apples, which fall from trees, and meats–which come from predation. In the future, I hope to remake this
+            project in a GPU-driven model to fix some difficulties with
+            movement, performance, and add nice features like ray tracing. There are some precursors in the project like
+            some Perlin noise terrain generation, but it is far from finished.
+          </p>
+        </div>
+        <div class="row">
+          <div class="image_gallery">
+            <img class="left_gallery" id="gallery_starter" src="Sources/Projects/Ecosystem/EcoLandscape.png" />
+            <video class="right_gallery" src="Sources/Projects/Ecosystem/MarchEcoVid.mov" controls>Video not
+              supported</video>
+          </div>
+        </div>
+      </div>
+      <div class="project">
+        <div class="row">
+          <div class="image_gallery">
+            <img class="left_gallery" id="gallery_starter" src="Sources/Projects/SolarSystem/SolarError.png" />
+            <video class="right_gallery" src="Sources/Projects/SolarSystem/SS2DRK.mov" controls>Video not
+              supported</video>
+          </div>
+        </div>
+        <div class="project_description">
+          <h2>Solar System Simulation</h2>
+          <p>
+            I decided to make a solar system for my final project in my physics class.
+            Using the Runge-Kutta Method as well as scraping information from two NASA website,
+            I was able to 2D and 3D simulations. These simulations worked really well, averaging
+            1% error over quite lengthy simulations, but they slowly diverged from the projections.
+            This was probably due to rounding errors in the data and program. I had a blast doing this
+            project, and I will definitely revisit it in the future!
+          </p>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project_description">
+          <h2>Misc GPU Projects</h2>
+          <p>
+            My first ever project on the GPU was a Sebastian Lague inspired-Boids simulation (seen on the right).
+            The Boids algorithm is a simple method to approximate flocks. Lague's video was fantastic, and I really
+            wanted my own boid simulation.
+            I played around with Unity, but I wanted to keep using Swift.
+            After a few infinite loops on the GPU and many computer crashes, I figured it out.
+            The collision with obstacles is done on the CPU and dramatically slows the program, so I don't use that very
+            much.
+            The code isn't very nice, but for my first GPU project, I am super happy with it.
+            It opened up so many new project ideas and was so fun to do-while albeit quite frustrating.
+            The second video (on the left) is Conway's Game of Life done on the GPU-a simulation, which approximates
+            cell cultures upon the density of cells.
+            For one of the computer science classes in high school, we had to build Conway's Game of Life in Python.
+            My Python of version was extremely slow and I wanted to speed it up, so I could have a more robust
+            simulation.
+            I did this project while mulling over my ray tracing project, so I tried to incorporate a few more powerful
+            features into this project,
+            and I learned quite a lot about thread groups and I was able to apply what I learned to all of my other GPU
+            projects.
+          </p>
+        </div>
+        <div class="row">
+          <div class="image_gallery">
+            <video class="left_gallery" id="gallery_starter" src="Sources/Projects/Misc/ConwayWebsite.mov"
+              controls>Video not
+              supported</video>
+            <video class="right_gallery" src="Sources/Projects/Misc/BoidsWebsite.mov" controls>Video not
+              supported</video>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>

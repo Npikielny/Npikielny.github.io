@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href='style.css' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  <!--Title Section-->
+  <div class="header">
+    <div class="container">
+      <h1 class="Title">Noah Pikielny</h1>
+      <!-- <img src="noahIconWhite.png" class = "Icon"> -->
+    </div>
+  </div>
+  <!--Navigation Section-->
+  <div>
+    <div class="nav">
+      <div class="container">
+        <ul>
+          <li>
+            <a href="#Profile">About Me</a>
+          </li>
+          <li>
+            <a href="#Projects">Projects</a>
+          </li>
+          <li>
+            <a href="#ContactMe">Contact Me</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- About Me Section -->
+  <div class="profile" , id="Profile">
+    <h1>About Me</h1>
+    <div class="profileChunk">
+      <img src="Sources/Profile/ProfileWebsite.jpg" class="profilePicture" id="profileContent" />
+      <div class="backgroundInfo">
+        <p>I am a student in the College of Arts and Sciences at Cornell University.
+          In my free time, I enjoy coding projects (currently a lot of GPU projects),
+          fishkeeping-specifically coral, playing games with friends,
+          and playing soccer. I also love studying biology, and I have been interning in Professor
+          Robert Hill's Neurobiology Lab at Dartmouth College for the past two summers.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- Featured Project Section -->
+  <div class="FeaturedProject">
+    <div class="pageView">
+      <main ref="table_container">
+        <article class="gridItem" id="feature1">
+          <div class="featureContainer">
+            <div class="featureItem">
+              <h1>Graphics Hub</h1>
+              <h3>Swift, Metal</h3>
+              <h6>April, 2020 (Ongoing)</h6>
+              <ul>
+                <li class="Description">
+                  <div>
+                    <h1>Haha</h1>
+                    <p>Some description</p>
+                  </div>
+                </li>
+                <li class="Example">
+                  <div>
+                    <ul>
+                      <li>
+                        <img src="Sources/Projects/GraphicsHub/Screen Shot 2021-09-06 at 4.49.33 PM.png" /><img>
+                      </li>
+                      <li>
+                        <img src="Sources/Projects/GraphicsHub/Screen Shot 2021-09-06 at 4.49.33 PM.png" /><img>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+        </article>
+
+        <article class="gridItem" id="feature2">
+          <div class="featureContainer">
+            <iframe class="featureItem" width="100%" height="100%" src="https://www.youtube.com/embed/IGSoiPwX9M4"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+        </article>
+
+        <article class="gridItem" id="feature3">
+          <div class="featureContainer">
+            <div class="featureItem">
+              <h1>SwiftUI Port</h1>
+              <ul>
+                <li class="Description">
+                  <div>
+                    <h1>Haha</h1>
+                    <p>Some description</p>
+                  </div>
+                </li>
+                <li class="Example">
+                  <div>
+                    <img src="Sources/Projects/GraphicsHub/swiftUIDemo.png" /><img>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </main>
+      <nav>
+        <a href="#feature1" onclick="selector1Pressed()">
+          <span class="dot" id="selector1"></span>
+        </a>
+        <a href="#feature2" onclick="selector2Pressed()">
+          <span class="dot" id="selector2"></span>
+        </a>
+        <a href="#feature3" onclick="selector3Pressed()">
+          <span class="dot" id="selector3"></span>
+        </a>
+        <script src="script.js" defer></script>
+      </nav>
+    </div>
+
+  </div>
+  <!--Project Section-->
+  <!-- <div class = "Project", id = "Projects"> -->
+  <!-- <ul>
+            <li class = "Description">
+              <div>
+                <h1>Graphics Hub</h1>
+                <h3>Swift, Metal</h3>
+                <h6>April, 2020 (Ongoing)</h6>
+                <p>Needs description</p>
+              </div>
+            </li>
+            <li class = "Example">
+              <div>
+                  <img src="Sources/Projects/GraphicsHub/Screen Shot 2021-09-06 at 4.49.33 PM.png"/><img>
+              </div>
+            </li>
+          </ul> -->
+  <!-- <div class = "divider"></div> -->
+  </div>
+  <!--ECODashboard-->
+  <!-- <div class = "Project", id = "Projects">
+          <ul>
+            <li class = "Description">
+              <div>
+                <h1>ECODashboard-Title Pending</h1>
+                <h3>Swift</h3>
+                <h6>February 1, 2020</h6>
+                <p>I've found myself going to the same websites daily, and I wanted to streamline the process.
+                    What better way to deal with this than make an app and get back to my UI roots.
+                    I'd like my program to have weather, ocean temperatures (to monitor reef bleaching), and a reminders panel.
+                    So far, I have done a spiffy job integrating RapidApi's OpenWeather API, and I have set up a scraping pipeline to
+                    take oceanic temperature and coral bleaching alert graphs from NOAA. *The image is stitched together because I made too many requests before implementing the ocean graphs*
+                </p>
+              </div>
+            </li>
+            <li class = "Example">
+              <div>
+                <img src="ECODashboard.png"/>
+              </div>
+            </li>
+          </ul>
+          <div class = "divider"></div>
+        </div> -->
+  <!--Trace Editor-->
+  <div class="Project" , id="Projects">
+    <ul>
+      <li class="Description">
+        <div>
+          <h1>Trace Editor</h1>
+          <h3>Swift, Metal</h3>
+          <h6>July, 2020 (Ongoing)</h6>
+          <p>
+            In order to speed up some of the work in the lab I work at, I decided to make an app.
+            I have learned a ton making this app–image heaps, background threads, and a bunch of graphics techniques.
+            I sadly was not able to finish in one summer, but I hope that I can make a working product when I
+            go back to working in the lab. I still need to optimize the program for devices with less VRAM,
+            do a little bit of redesigning, and add some path recognition.
+          </p>
+        </div>
+      </li>
+      <li class="Example">
+        <div>
+          <video src="Sources/Projects/TraceEditor/TraceEditorDemo.mov" controls>Video not supported</video>
+          <!-- <video src = "WebsiteJuliaSet.mov" controls>Video not supported</video> -->
+        </div>
+      </li>
+    </ul>
+    <!-- <div class = "divider"></div> -->
+  </div>
+  <!--Ray Marching-->
+  <div class="Project" , id="Projects">
+    <ul>
+      <li class="Description">
+        <div>
+          <h1>Ray Marching</h1>
+          <h3>Swift, Metal</h3>
+          <h6>May 9, 2020</h6>
+          <p>It's time to put my ray tracing skills to use! At the moment I am upgrading to a
+            ray marching renderer, but I would like to create some animations soon
+            (hopefully a Curl Noise visualizer)!</p>
+        </div>
+      </li>
+      <li class="Example">
+        <div>
+          <video src="Sources/Projects/RayMarching/RayMarchWebsite1.mov" controls>Video not supported</video>
+          <video src="Sources/Projects/RayMarching/RayMarchWebsite2.mov" controls>Video not supported</video>
+          <!-- <video src = "WebsiteJuliaSet.mov" controls>Video not supported</video> -->
+        </div>
+      </li>
+    </ul>
+    <!-- <div class = "divider"></div> -->
+  </div>
+  <!--Crossword-->
+  <div class="Project">
+    <ul>
+      <li class="Description">
+        <div>
+          <h1>Crosswords With Friends</h1>
+          <h3>Swift</h3>
+          <h6>May 3, 2020 (Ongoing)</h6>
+          <p>My brother (Adam Pikielny) and I are working on a multiplayer crossword competition game.
+            It's not on the appstore yet, but look out for the beta soon!</p>
+        </div>
+      </li>
+      <li class="Example">
+        <div>
+          <img src="Sources/Projects/CrosswordWebsite.png" /><img>
+          <!-- <video src = "WebsiteJuliaSet.mov" controls>Video not supported</video> -->
+        </div>
+      </li>
+    </ul>
+    <!-- <div class = "divider"></div> -->
+  </div>
+  <!--Ray Tracing-->
+  <div class="Project">
+    <ul>
+      <li class="Description">
+        <div>
+          <h1>GPU Ray Tracing</h1>
+          <h3>Swift & Metal</h3>
+          <h6>April 20, 2020</h6>
+          <p>This was another project inspired by one of Sebastian Lague's Youtube videos. For those who don't know,
+            ray tracing is a method of rendering a 3D scene by casting light rays from a camera to the scene.
+            As the light bounces off of materials, it is refracted based upon the material properties of the
+            objects-picking up
+            color and reflecting off of surfaces. Doing the same from the light source (instead of the camera) to the
+            scene can render shadows as well!
+            This project had some significant obstacles for me because I used a tutorial meant for Unity,
+            which has some nice tools that the Apple Environment doesn't have yet (or I haven't found them yet).
+            I spent a while understand 4x4 camera projection matrices and mapping rays to a 3D image.
+            Currently, my project renders refraction, reflection, and shadows for a scene with a plane and randomly
+            generated spheres.
+            I am working on adding triangular faces as well because then I can add any 3D model I want-the math is a
+            little tricky though,
+            and I want to figure it out instead of looking it up...
+            The project runs in real-time, but it dops frames after the image gets larger than 512x512.
+            Also, I added antialiasing to smooth the images, but this feature only works on images
+            (nothing with high refresh rates) because it just isn't feasible.
+            With this image-focused mode, I can expand the project to incorporate a lot more material properties,
+            which require a high number of passes before properly rendering.
+          </p>
+        </div>
+      </li>
+      <li class="Example">
+        <div>
+          <img src="Sources/Projects/RayTracing/BoxyBoysToo!.png" />
+          <video src="Sources/Projects/RayTracing/RaytracingVideoWebsite.mov" controls>Video not supported</video>
+        </div>
+      </li>
+    </ul>
+    <!-- <div class = "divider"></div> -->
+  </div>
+  <!--Complex Images-->
+  <div class="Project">
+    <ul>
+      <li class="Description">
+        <div>
+          <h1>GPU Generation of Complex Images</h1>
+          <h3>Swift & Metal</h3>
+          <h6>March 17, 2020</h6>
+          <p>(This is about to get a tad cheesy, and I apologize in advance). When first learning about complex numbers,
+            my math teacher was trying to explain some importance to the seemingly useless concept and pointed to our
+            class textbook with some gorgeous fractals and said that it was completely based on complex numbers. That
+            moment gave me such a greater appreciation of these designs that I had overlooked on essentially all of my
+            math textbooks. Since then, I have wanted to generate my own fractals, but I had never had the means to do
+            so before I learned to code. After learning about compute shaders with Boids, I could not wait to tackle
+            this project. I spent countless hours randomly generating images and playing around with the colors. As I
+            learned more about GPU's I changed the project from rendering individual images to rendering animatable
+            fractals from which I saved tons of photos and videos-They're so pretty! This is probably one of my favorite
+            projects, and I love to revisit it. I also can't stop showing off the images, hence the backgrounds to the
+            website :).</p>
+        </div>
+      </li>
+      <li class="Example">
+        <div>
+          <img src="Sources/Projects/ComplexImages/MandelBrotWebsite.jpg" />
+          <video src="Sources/Projects/ComplexImages/WebsiteJuliaSet.mov" controls>Video not supported</video>
+        </div>
+      </li>
+    </ul>
+    <!-- <div class = "divider"></div> -->
+  </div>
+  <!--Ecosystem-->
+  <div class="Project">
+    <ul>
+      <li class="Description">
+        <div>
+          <h1>Ecosystem Simulation</h1>
+          <h3>Swift, Metal, & GSL</h3>
+          <h6>March, 2020</h6>
+          <p>This was a school project a friend and I made for March Intensive (essentially a project week).
+            Inspired by Sebastian Lague and Primer's exploration of evolution through ecosystem simulations, we set out
+            to make our own rendition.
+            We used Scenekit for our game engine, blender for modeling, and Github for source control.
+            It was my first time working with someone else on a major project. It was somewhat annoying with XCode's
+            source control,
+            but ultimately it was an enjoyable and helpful process. In the end, we were able to add a thriving
+            population of bunnies.
+            We also successfully added a species of bird with some uncanny valley, because we did not animate their
+            movements–they just kind of glide everywhere.
+            There are also foxes, but they definitely need some work to not decimate the bunny population.
+            I had an absolute blast playing with shaders for the water, trees, and cloud movement, and I think they look
+            absolutely stellar.
+            There are three basic food groups, growing plants (berry bushes and cactus fruits that will replenish their
+            food after some time–shown with some crispy animation),
+            apples, which fall from trees, and meats–which come from predation. In the future, I hope to remake this
+            project in a GPU-driven model to fix some difficulties with
+            movement, performance, and add nice features like ray tracing. There are some precursors in the project like
+            some Perlin noise terrain generation, but it is far from finished.
+        </div>
+      </li>
+      <li class="Example">
+        <div>
+          <img src="Sources/Projects/Ecosystem/EcoLandscape.png" />
+          <video src="Sources/Projects/Ecosystem/MarchEcoVid.mov" controls>Video not supported</video>
+        </div>
+      </li>
+    </ul>
+    <!-- <div class = "divider"></div> -->
+  </div>
+  <!--Solar System-->
+  <div class="Project">
+    <ul>
+      <li class="Description">
+        <div>
+          <h1>Solar System Simulation</h1>
+          <h3>Swift & Python</h3>
+          <h6>March, 2020</h6>
+          <p>I decided to make a solar system for my final project in my physics class.
+            Using the Runge-Kutta Method as well as scraping information from two NASA website,
+            I was able to 2D and 3D simulations. These simulations worked really well, averaging
+            1% error over quite lengthy simulations, but they slowly diverged from the projections.
+            This was probably due to rounding errors in the data and program. I had a blast doing this
+            project, and I will definitely revisit it in the future!
+        </div>
+      </li>
+      <li class="Example">
+        <div>
+          <img src="Sources/Projects/SolarSystem/SolarError.png" />
+          <video src="Sources/Projects/SolarSystem/SS2DRK.mov" controls>Video not supported</video>
+        </div>
+      </li>
+    </ul>
+    <!-- <div class = "divider"></div> -->
+  </div>
+  <!--MISC-->
+  <div class="Project">
+    <ul>
+      <li class="Description">
+        <div>
+          <h1>Misc GPU Projects</h1>
+          <h3>Swift & Metal </h3>
+          <p>My first ever project on the GPU was a Sebastian Lague inspired-Boids simulation (seen on the right).
+            The Boids algorithm is a simple method to approximate flocks. Lague's video was fantastic, and I really
+            wanted my own boid simulation.
+            I played around with Unity, but I wanted to keep using Swift.
+            After a few infinite loops on the GPU and many computer crashes, I figured it out.
+            The collision with obstacles is done on the CPU and dramatically slows the program, so I don't use that very
+            much.
+            The code isn't very nice, but for my first GPU project, I am super happy with it.
+            It opened up so many new project ideas and was so fun to do-while albeit quite frustrating.
+            The second video (on the left) is Conway's Game of Life done on the GPU-a simulation, which approximates
+            cell cultures upon the density of cells.
+            For one of the computer science classes in high school, we had to build Conway's Game of Life in Python.
+            My Python of version was extremely slow and I wanted to speed it up, so I could have a more robust
+            simulation.
+            I did this project while mulling over my ray tracing project, so I tried to incorporate a few more powerful
+            features into this project,
+            and I learned quite a lot about thread groups and I was able to apply what I learned to all of my other GPU
+            projects.
+          </p>
+        </div>
+      </li>
+      <li class="Example">
+        <div>
+          <video src="Sources/Projects/Misc/ConwayWebsite.mov" controls>Video not supported</video>
+          <video src="Sources/Projects/Misc/BoidsWebsite.mov" controls>Video not supported</video>
+        </div>
+      </li>
+    </ul>
+    <!-- <div class = "divider"></div> -->
+  </div>
+  <!--Utilities-->
+  <div class="Project">
+    <ul>
+      <li class="Description">
+        <div>
+          <h1>Utilities</h1>
+          <h3>Swift</h3>
+          <h6>July, 2018</h6>
+          <p>
+            This was the first project I ever built.
+            I wanted to create an app for basic utilities like reminders, a calendar (this was more of my mom's
+            influence)
+            multiple timers (we really needed it in the lab), etc.
+            I based it off of Let's Build That App's Youtube Series.
+            I never finished the project, but it was
+            a great learning tool!
+          </p>
+        </div>
+      </li>
+      <li class="Example">
+        <div>
+          <video src="Sources/Projects/utilitiesDemo.mov" controls>Video not supported</video>
+        </div>
+      </li>
+    </ul>
+    <!-- <div class = "divider"></div> -->
+  </div>
+  <div class="AboutMe" id="ContactMe">
+    <h1>Contact Me</h1>
+    <ul>
+      <li>
+        <a href="mailto:npikielny@gmail.com">
+          <img class="SMImage" src="Sources/UI/clipart3582635.png" />
+        </a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/npikielny/">
+          <img class="SMImage" src="Sources/UI/circle-instagram-media-network-social-icon-467116.png" />
+        </a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/fishyexperiences/">
+          <img class="SMImage" src="Sources/UI/fishing-fish-logo-icon-by-Vexels.png" />
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div>
+    <a target="_blank" href="https://www.vexels.com/vectors/preview/137595/fishing-fish-logo-icon"> Fishing fish logo
+      icon </a> | Designed by Vexels.com
+  </div>
+</body>
+
+</html>
