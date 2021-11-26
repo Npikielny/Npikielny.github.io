@@ -1,0 +1,272 @@
+/* boiler plate */
+@font-face {
+  font-family: "sf-mono";
+  src: url(SFMono-Regular.ttf) format("truetype");
+}
+
+body {
+  background-color: rgb(5, 5, 38);
+  padding: 0px;
+  margin: 0px;
+}
+/* title */
+.title_panel {
+  background: url(Sources/UI/WebsiteBackground.jpg) no-repeat center center;
+  background-size: cover;
+  height: 800px;
+  width: 100%;
+  color: aliceblue;
+  text-align: center;
+  justify-content: center;
+  outline: black 3px solid;
+}
+.title_logo {
+  background: url(Sources/Profile/NoahWhiteIcon.svg) no-repeat center center;
+  background-size: contain;
+  height: 92.5%;
+  width: 100%;
+  aspect-ratio: 31/14;
+}
+#title {
+  position: absolute;
+  font-family: "sf-mono";
+  font-weight: bolder;
+  font-size: 100px;
+  bottom: 100px;
+  width: 100%;
+}
+/* about me */
+
+.about_me {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(Sources/UI/toadstool-background.JPG) no-repeat center center;
+  background-size: cover;
+  height: 1000px;
+  color: aliceblue;
+  padding: 30px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  padding: 0px; 
+  margin: 0px;
+}
+
+.about_me_info {
+  width: 100%;
+  /* align-items: center; */
+  justify-content: space-between;
+}
+
+.profile_pic {
+  width: 100%;
+  height: auto;
+  min-height: 700px;
+  background: url(Sources/Profile/ProfileRounded.png) no-repeat center center;
+  background-size: contain;
+  /* aspect-ratio: 2070/3245; */
+}
+
+.abt_me_desc {
+  font-family: "sf-mono";
+  width: 100%;
+}
+
+.abt_me_desc p {
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+  background-color:  rgba(5, 5, 38, 0.75);
+  border-radius: 15px;
+}
+
+.image_gallery {
+  width: 70%;
+  flex-direction: row;
+}
+
+.image_gallery img {
+  /* width: 65%; */
+  max-width: 70%;
+  max-height: 60%;
+  margin-top: -50px;
+  border-radius: 25px;
+}
+.image_gallery video {
+  max-width: 70%;
+  max-height: 60%;
+  margin-top: -50px;
+  border-radius: 25px;
+}
+
+.left_gallery {
+  float: left;
+}
+.right_gallery {
+  float: right;
+}
+#gallery_starter {
+  margin-top: 0px;
+}
+/* lab */
+.lab_panel {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-around;
+  background: url(Sources/UI/oligo.jpg) no-repeat center center;
+  background-size: cover;
+  height: 1000px;
+  width: 100%;
+  color: aliceblue;
+  justify-content: center;
+  align-items: center;
+  outline: black 3px solid;
+}
+
+h1 {
+  margin-top: 0px;
+  font-family: "sf-mono";
+  font-weight: bolder;
+  font-size: 100px;
+  width: 100%;
+  text-align: center;
+  color: aliceblue;
+}
+
+.research_item {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  padding: 0px;
+  border-radius: 15px;
+  border: 3px white solid;
+  margin-bottom: 50px;
+}
+
+.description {
+  display: flex;
+  margin: 0px;
+  width: 80%;
+  height: 100%;
+  background-color:  rgba(5, 5, 38, 0.75);
+  align-items: center;
+  justify-content: center;
+}
+
+.research_item p {
+  margin-top: 0px;
+  padding: 15px;
+  font-family: "sf-mono";
+  font-size: 20px;
+}
+
+.research_item img, .research_item video {
+  margin: 0px;
+  padding: 0px;
+  width: 20%;
+  height: 100%;
+  object-fit: fill;
+  background-color:  rgba(5, 38, 38, 1.0);
+}
+
+#left {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+#right {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.coding_background {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: url(Sources/UI/coding_background.png) repeat-y ;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  color: aliceblue;
+  justify-content: center;
+  align-items: center;
+  outline: black 3px solid;  
+}
+
+.featureContainer {
+  width: 100%;
+  padding-top: 56.25%;
+  height: 0px;
+  position: relative;
+}
+
+.featureItem {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.project {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  padding: 0px;
+  border: 3px white solid;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: rgba(5, 5, 38, 0.75);
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.project_description {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.project p {
+  margin-top: 0px;
+  padding: 15px;
+  font-family: "sf-mono";
+  font-size: 20px;
+}
+
+h2 {
+  margin-top: 0px;
+  font-family: "sf-mono";
+  font-weight: bolder;
+  font-size: 50px;
+  width: 100%;
+  text-align: center;
+  color: aliceblue;
+}
+
+
+.flat_gallery {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+} 
+
+ .filler_asset img {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  border-radius: 25px;
+}
+
+.filler_asset video {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  border-radius: 25px;
+}

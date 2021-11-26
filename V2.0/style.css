@@ -1,0 +1,336 @@
+html, body {
+  background-color: #117bff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100px;
+  height: 100%;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+
+.header {
+  background: url(Sources/UI/WebsiteBackground.jpg) no-repeat center center;
+  background-size: cover;
+  height: 800px;
+  text-align: center;
+}
+
+.container {
+  margin: 0px auto;
+  top: 345px;
+}
+
+
+.header .container {
+  position: relative;
+}
+
+.header h1 {
+  font-size: 80px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.Title {
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.Icon {
+    padding-top: 30%;
+    margin-right: 85%;
+    width: 15%;
+}
+
+
+.nav ul {
+ height: 80px;
+ width: 100%;
+ list-style: none;
+ margin: 0 auto;
+ padding: 0;
+}
+
+.nav ul li {
+ display: inline-block;
+ height: 80px;
+ line-height: 80px;
+ list-style: none;
+ padding: 0 0px;
+ transition: background .5s;
+ width: 32%;
+ text-align: center;
+ padding-right: 0px;
+ padding-left: 0px;
+ margin-right:0px;
+ margin-left:0px;
+}
+.nav ul li a {
+ color: #f00;
+ display: inline-block;
+ height: 80px;
+ line-height: 80px;
+ list-style: none;
+ padding: 0 0px;
+ transition: background .5s;
+max-width: 100%;
+ text-align: center;
+ padding-right: 0px;
+ padding-left: 0px;
+ margin-right:0px;
+ margin-left:0px;
+}
+.nav {
+ background: #000;
+ height: 80px;
+ width: 100%;
+ margin-bottom: 0px;
+}
+
+.btn {
+    max-width: 100%;
+ color: #fff;
+ background: #000;
+ padding: 10px 40px;
+ text-decoration: none;
+ transition: background .5s;
+}
+.btn:hover, .nav ul li:hover {
+ background: #117bff;
+ cursor: pointer;
+ transition: background .5s;
+}
+
+.profile {
+  background-color: #000;
+  color: #0f0;
+  height: 500px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  width: 100%;
+}
+.profile h1 {
+  padding: 0px;
+  margin: 0px;
+  height: 10%;
+  color: #fff;
+  text-align: center;
+}
+
+.profileChunk {
+  float: left;
+  /* background-color: #000; */
+  margin-left: 10%;
+  margin-right: 10%;
+  background: url(Sources/UI/profilebackgroundWebsite.jpg) no-repeat center center;
+  /* background-size: 100% auto; */
+  background-size: cover;
+  height: 85%;
+  width: 80%;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding: 0px;
+}
+
+.profilePicture {
+  float: left;
+  /* background-color: #000; */
+  background-color: #0f0;
+  height: auto;
+  width: 20%;
+  max-width: 244px;
+  margin-left: 5%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding: 0px;
+}
+.backgroundInfo {
+  float: right;
+  width: 65%;
+  background-color: #000;
+  height: 90%;
+  max-height: 385px;
+  /* margin-left: 270px; */
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-right: 5%;
+  padding: 0px;
+}
+
+.backgroundInfo p {
+  color: #fff;
+  margin: 5px;
+}
+
+.Project {
+  background-color: #000;
+  display: inline-block;
+  color: #fff;
+  width: 100%;
+  max-height: 800px;
+  margin-top: 5px;
+  padding: 0px;
+}
+
+.Project ul {
+  height: 80px;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.Project ul li {
+  color: #f00;
+  display: inline-block;
+  list-style: none;
+  padding: 0 0px;
+  transition: background .5s;
+  width: 50%;
+  text-align: center;
+}
+
+.Project h1, .Project h2, .Project h3, .Project h6, .Project p {
+  color: #fff;
+}
+.Project p {
+  margin-left: 10px;
+  text-align: left;
+}
+img, video {
+  width: 48%;
+  max-width: 400px;
+  max-height: 400px;
+  /* margin: 0px 0px; */
+  /* padding: 0px; */
+}
+/* video {
+  width: 48%;
+  max-width: 400px;
+  max-height: 400px;
+} */
+.Description {
+  width: 50%;
+  float: left;
+}
+.Example {
+  float: right;
+  width: 50%;
+  max-height: 400px;
+}
+
+.AboutMe {
+    background-color: #000;
+    padding: 0px;
+    /* margin: 0px; */
+    margin-top: -15px;
+    text-align: center;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.AboutMe h1 {
+    color: #fff;]
+}
+
+.SMImage, .AboutMe a {
+    width: 50px;
+    height: 50px;
+    color: #fff;
+}
+
+.AboutMe ul {
+    list-style: none;
+    padding: 0px;
+    width: 30%;
+    text-align: center;
+    margin: auto;
+}
+
+.AboutMe ul li {
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+}
+
+.FeaturedProject {
+    color: white;
+    text-align: center;
+    background-color: black;
+}
+
+/* source: https://usefulangle.com/post/142/css-video-aspect-ratio */
+
+.featureContainer {
+    width: 100%;
+    padding-top: 56.25%;
+    height: 0px;
+    position: relative;
+}
+
+.featureItem {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.featureItem ul {
+    list-style: none;
+    display: inline;
+}
+.featureItem li {
+    height: 50%;
+    width: 50%;
+}
+.featureItem img {
+    max-width: 600px;
+    max-height: 600px;
+    width: 100%;
+    height: 100%;
+}
+.featureDescription {
+    width: 50%;
+    height: 100%;
+}
+.featureExample {
+    width: 50%;
+    height: 100%;
+}
+.pageView {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content min-content 1fr;
+}
+.pageView nav {
+    scroll-behavior: smooth;
+    color: white;
+    border-radius: 4px;
+}
+.dot {
+    margin-top: -25px;
+    height: 25px;
+    width: 25px;
+    background-color: blue;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+main {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-auto-flow: column;
+  grid-auto-columns: 100%;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+main article {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
