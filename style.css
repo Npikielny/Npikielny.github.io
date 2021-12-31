@@ -55,7 +55,7 @@ body {
 .title_panel {
   background: url(Sources/UI/WebsiteBackground.jpg) no-repeat center center;
   background-size: cover;
-  height: 800px;
+  height: 950px;
   width: 100%;
   color: aliceblue;
   text-align: center;
@@ -74,7 +74,7 @@ body {
   font-family: "sf-mono";
   font-weight: bolder;
   font-size: 100px;
-  top: 685px;
+  top: 770px;
   width: 100%;
 }
 /* about me */
