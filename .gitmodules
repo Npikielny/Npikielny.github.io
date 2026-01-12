@@ -1,0 +1,3 @@
+[submodule "projects/ComplexViewer"]
+	path = projects/ComplexViewer
+	url = https://github.com/Npikielny/ComplexViewer.git
