@@ -7,12 +7,6 @@
 
 <body>
   <!-- Splash Screen -->
-  <div>
-    <div class="splash">
-      <img class="fade-in" src="Sources/Profile/NoahIcon.svg" />
-      <!-- <h1 class="fade-in">Noah Pikielny</h1> -->
-    </div>
-  </div>
   <!-- Header -->
   <div class="section">
     <div class="title_panel" />
@@ -22,37 +16,142 @@
   <!-- About Me -->
   <div class="section">
     <div class="about_me">
+      <p>
+        I am an incoming Master's Student at the NYU Courant Institute. I have a passion for Computer Vision, Marine Ecology, miscellaneous computer projects, and photography. I graduated from the Cornell with a Bachelor of Arts in Computer Science with a specialization in Remote Sensing of the Environment.
+        I have also completed 4 years of research focusing on coral reef and ocean mapping from drones at the Aircraft Center for Earth Studies with Dr. Chirayath at the University of Miami. 
+        Here, you can find information about my research experience and personal projects.
+      </p>
       <div class="abt_me_photos">
         <div class="about_me_info">
-          <div class="profile_pic"></div>
+          <img class="profile_pic" src="Sources/Profile/Keanu_edited.JPG"></img>
         </div>
         <div class="row">
-          <div class="image_gallery">
-            <img class="right_gallery" id="gallery_starter" src="Sources/Photography/mocha.JPG" />
-            <img class="left_gallery" src="Sources/Photography/clowns.JPG" />
-            <img class="right_gallery" src="Sources/Photography/stars.JPG" />
-            <img class="left_gallery" src="Sources/Photography/hermit.JPG" />
+          <div class="image_gallery" width="50%">
+            <img class="right_gallery" id="gallery_starter" src="Sources/Photography/mocha.JPG"/>
+            <img class="left_gallery" src="Sources/Photography/clowns.JPG"/>
+            <img class="right_gallery" src="Sources/Photography/stars.JPG"/>
+            <img class="left_gallery" src="Sources/Photography/hermit.JPG"/>
           </div>
         </div>
       </div>
-      <p>
-        I am a student in the College of Arts and Sciences at Cornell University studying
-        computer science and marine biology.
-        In my free time, I enjoy coding projects (currently a lot of GPU projects),
-        fishkeeping (really anything coral-related), photography, playing games with friends,
-        and playing soccer.
-      </p>
     </div>
     <!-- Research -->
   </div>
   <!-- Research -->
   <div class="section">
-    <div class="lab_panel">
-      <h1>Research</h1>
+    <div class="chirayath_panel">
+      <h1>ACES</h1>
       <div class="research_item">
         <div class="description" id="left">
-          <p>I have been interning in Professor Robert Hill's Neurobiology Lab at Dartmouth College for the past three
-            summers.
+          <p>I worked as a software engineer at the Aircraft Center for Earth Studies at the University of Miami under Dr. Ved Chirayath's advisorship for 4 years.</p>
+        </div>
+      </div>
+      <div class="research_item">
+        <div class="description">
+          <div>
+            <h2>SeaScan</h2>
+          
+            <p style="margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px;">
+              Software that leverages targets of opportunity at the sea surface to make maps without the use of expensive structure-from-motion, which often fails on the sea surface. 
+            </p>
+            <a href="https://npikielny.github.io/SeaScan/overview.html">
+              <p style="color: rgb(137, 137, 255); padding-top: 0px; padding-bottom: 0px;">
+                For a more in-depth explanation, please visit the project page (click here)!
+              </p>
+            </a>
+
+            <div style="display: flex; border-radius: 15px;">
+              <video src="/Sources/Research/Chirayath/SeaScan/boats_timelapse 2.mp4" controls autoplay playsinline loop muted style="object-fit: fit; width: 33%;"></video>
+              <video src="/Sources/Research/Chirayath/SeaScan/rosenstiel_dock 2.mp4" controls autoplay playsinline loop muted style="object-fit: fit; width: 33%;"></video>
+              <iframe src="https://npikielny.github.io/SeaScan/march_20_folium.html" frameborder="0" width="34%" allowfullscreen=""></iframe>
+            </div>
+
+            <a href="https://npikielny.github.io/SeaScan/march_20_folium.html">
+              <p style="padding: 5px; margin-bottom: 0px; text-align: center; color: rgb(137, 137, 255);">
+                P.S. The map on the right is interactive (or click here)!
+              </p>
+            </a>
+          </div>
+
+        </div>
+      </div>
+      <div class="research_item">
+        <div class="description" id="left">
+          <div>
+            <h2>Animal Detection</h2>
+            <div style="display: flex; justify-content: space-between;">
+              <p>NEED TO ADD TEXT</p>
+              <div style="width: 30%; justify-content: space-between;">
+                <video src="/Sources/Research/Chirayath/AnimalDetection/shark.mp4" controls autoplay playsinline loop muted style="object-fit: fit; width: 100%; max-height: 750px;"></video>
+                <video src="/Sources/Research/Chirayath/AnimalDetection/fever.mp4" controls autoplay playsinline loop muted style="object-fit: fit; width: 100%; max-height: 750px"></video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="research_item">
+        <div class="description">
+          <div style="width: 100%; text-align: center;">
+            <h2>Fluid Lensing & Data Viewer</h2>
+            <div style="display: flex; justify-content: space-between;">
+              <p>NEED TO ADD TEXT</p>
+              <a href="https://nemonet.info/data-viewer" style="width: 33%">
+                <p style="padding: 5px; margin-bottom: 0px; text-align: center; color: rgb(137, 137, 255); font-size: 14px;">
+                  Click here to visit the data-viewer!
+                </p>
+                <video src="/Sources/Research/Chirayath/FluidLensing/DataViewer.mp4" controls autoplay playsinline loop muted style="object-fit: fit; width: 100%; max-height: 250px"></video>
+              </a>
+            </div>
+            <div style="display: flex; border-radius: 15px;">
+              <div style="width: 33.33%; gap: 0px;">
+                <video src="/Sources/Research/Chirayath/FluidLensing/swimmers_raw.mp4" controls autoplay playsinline loop muted style="object-fit: fit; width: 100%;"></video>
+                <p style="padding: 0px; margin-bottom: 5px;">Raw Frames</p>
+              </div>
+              <div style="width: 33.33%; gap: 0px;">
+                <video src="/Sources/Research/Chirayath/FluidLensing/swimmers_average.mp4" controls autoplay playsinline loop muted style="object-fit: fit; width: 100%;"></video>
+                <p style="padding: 0px; margin-bottom: 5px;">Average</p>
+              </div>
+              <div style="width: 33.33%; gap: 0px;">
+                <video src="/Sources/Research/Chirayath/FluidLensing/swimmers_FL.mp4" controls autoplay playsinline loop muted style="object-fit: fit; width: 100%;"></video>
+                <p style="padding: 0px; margin-bottom: 5px;">Fluid Lensing</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="research_item">
+        <div class="description" id="left">
+          <div>
+          <h2>Cetacean Project</h2>
+          <p>NEED TO ADD TEXT</p>
+          <div style="display: flex; justify-content: space-between; align-items: start; background-color: white; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">
+            <video src="/Sources/Research/Chirayath/Cetacean/recon_1.mp4" controls autoplay playsinline loop muted style="height: 100%; max-width: 20%;"></video>
+            <video src="/Sources/Research/Chirayath/Cetacean/recon_2.mp4" controls autoplay playsinline loop muted style="height: 100%; max-width: 20%;"></video>
+            <video src="/Sources/Research/Chirayath/Cetacean/snout.mp4" controls autoplay playsinline loop muted style="height: 100%; max-width: 20%;"></video>
+            <video src="/Sources/Research/Chirayath/Cetacean/coral_plug.mp4" controls autoplay playsinline loop muted style="height: 100%; max-width: 20%;"></video>
+            <video src="/Sources/Research/Chirayath/Cetacean/piti_trimmed.mp4" controls autoplay playsinline loop muted style="height: 100%; max-width: 20%;"></video>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <div class="research_item">
+        <div class="description">
+          <div style="gap: 0px; padding-bottom: 0px;">
+            <h2>MiDAR Communications</h2>
+            <p>NEED TO ADD TEXT</p>
+            <video src="/Sources/Research/Chirayath/MiDAR/HelloWorld15IPP2_Processedsafe_synchronized_video_small.mp4" controls autoplay playsinline loop muted style="max-width: 100%; margin-bottom: 0px; padding-bottom: 0px; border-bottom-left-radius: 15px; border-bottom-right-radius: 15px;"></video>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hill_panel">
+      <h1>Hill Lab</h1>
+      <div class="research_item">
+        <div class="description" id="left">
+          <p>I interned in Professor Robert Hill's Neurobiology Lab at Dartmouth College for the three.
             My first summer, I learned the ins and outs of the wet lab. In my free time I created a denoising algorithm,
             that runs on the GPU of course, that isolates oligodendrocytes from image artifacts by their linear
             morphology. This algorithm typically takes a few seconds to run and is fairly accurate, although it requires
@@ -63,7 +162,7 @@
       </div>
 
       <div class="research_item">
-        <video src="Sources/Research/TraceEditor/TraceEditorDemo.mov" controls id="left">Video not supported</video>
+        <video src="Sources/Research/TraceEditor/TraceEditorDemo.mov" controls muted autoplay playsinline loop id="left" style="width: 40%;">Video not supported</video>
         <div class="description" id="right">
           <p>
             While my second summer in Professor Hill's lab was entirely remote, I was able to leverage my computer
@@ -122,7 +221,7 @@
       <div class="featureContainer">
         <iframe class="featureItem" width="100%" height="100%" src="https://www.youtube.com/embed/IGSoiPwX9M4"
           title="YouTube video player" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allow="accelerometer; autoplay playsinline; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen></iframe>
       </div>
       <!-- Complex Viewer -->
@@ -158,9 +257,9 @@
         <div class="row">
           <div class="image_gallery">
             <video class="left_gallery" id="gallery_starter" src="Sources/Projects/RayMarching/RayMarchWebsite1.mov"
-              controls>Video
+              controls muted autoplay playsinline>Video
               not supported</video>
-            <video class="right_gallery" src="Sources/Projects/RayMarching/RayMarchWebsite2.mov" controls>Video not
+            <video class="right_gallery" src="Sources/Projects/RayMarching/RayMarchWebsite2.mov" controls muted autoplay playsinline>Video not
               supported</video>
           </div>
         </div>
@@ -202,7 +301,7 @@
         <div class="row">
           <div class="image_gallery">
             <img class="left_gallery" id="gallery_starter" src="Sources/Projects/RayTracing/BoxyBoysToo!.png" />
-            <video class="right_gallery" src="Sources/Projects/RayTracing/RaytracingVideoWebsite.mov" controls>Video not
+            <video class="right_gallery" src="Sources/Projects/RayTracing/RaytracingVideoWebsite.mov" controls muted autoplay playsinline>Video not
               supported</video>
             <img class="left_gallery" src="Sources/Projects/RayTracing/RayTracingWebsite.png" />
           </div>
@@ -213,7 +312,7 @@
         <div class="row">
           <div class="image_gallery">
             <img class="left_gallery" id="gallery_starter" src="Sources/Projects/ComplexImages/MandelBrotWebsite.jpg" />
-            <video class="right_gallery" src="Sources/Projects/ComplexImages/WebsiteJuliaSet.mov" controls>Video not
+            <video class="right_gallery" src="Sources/Projects/ComplexImages/WebsiteJuliaSet.mov" controls muted autoplay playsinline>Video not
               supported</video>
           </div>
         </div>
@@ -266,7 +365,7 @@
         <div class="row">
           <div class="image_gallery">
             <img class="left_gallery" id="gallery_starter" src="Sources/Projects/Ecosystem/EcoLandscape.png" />
-            <video class="right_gallery" src="Sources/Projects/Ecosystem/MarchEcoVid.mov" controls>Video not
+            <video class="right_gallery" src="Sources/Projects/Ecosystem/MarchEcoVid.mov" controls muted autoplay playsinline>Video not
               supported</video>
           </div>
         </div>
@@ -276,7 +375,7 @@
         <div class="row">
           <div class="image_gallery">
             <img class="left_gallery" id="gallery_starter" src="Sources/Projects/SolarSystem/SolarError.png" />
-            <video class="right_gallery" src="Sources/Projects/SolarSystem/SS2DRK.mov" controls>Video not
+            <video class="right_gallery" src="Sources/Projects/SolarSystem/SS2DRK.mov" controls muted autoplay playsinline>Video not
               supported</video>
           </div>
         </div>
@@ -320,9 +419,9 @@
         <div class="row">
           <div class="image_gallery">
             <video class="left_gallery" id="gallery_starter" src="Sources/Projects/Misc/ConwayWebsite.mov"
-              controls>Video not
+              controls muted autoplay playsinline>Video not
               supported</video>
-            <video class="right_gallery" src="Sources/Projects/Misc/BoidsWebsite.mov" controls>Video not
+            <video class="right_gallery" src="Sources/Projects/Misc/BoidsWebsite.mov" controls muted autoplay playsinline>Video not
               supported</video>
           </div>
         </div>
@@ -343,7 +442,7 @@
         </div>
         <div class="row">
           <!-- <div class="image_gallery"> -->
-          <video class="stand_alone" src="Sources/Projects/utilitiesDemo.mov" controls>Video not supported</video>
+          <video class="stand_alone" src="Sources/Projects/utilitiesDemo.mov" controls muted autoplay playsinline>Video not supported</video>
           <!-- </div> -->
         </div>
       </div>
@@ -400,7 +499,7 @@
         </a>
       </div>
       <div class="contact_item">
-        <a href="mailto:np299@cornell.edu">
+        <a href="mailto:npikielny@gmail.com">
           <div class="contact_info">
             <div class="contact_image">
               <img src="Sources/Profile/NoahIcon.svg" />
@@ -414,7 +513,7 @@
       </div>
     </div>
   </div>
-  <script src="app.js"></script>
+  <!-- <script src="app.js"></script> -->
 </body>
 
 </html>

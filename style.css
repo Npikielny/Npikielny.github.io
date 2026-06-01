@@ -85,7 +85,8 @@ body {
   justify-content: center;
   background: url(Sources/UI/toadstool-background.JPG) no-repeat center center;
   background-size: cover;
-  height: 1100px;
+  /* height: 1000px; */
+  min-height: 1000px;
   color: aliceblue;
   padding: 30px;
 }
@@ -101,23 +102,24 @@ body {
 
 .about_me_info {
   width: 100%;
-  /* align-items: center; */
-  justify-content: space-around;
 }
 
 .profile_pic {
   width: 100%;
-  height: auto;
-  height: 909px;
-  background: url(Sources/Profile/ProfileRounded.png) no-repeat center center;
-  background-size: contain;
+  /* max-height: 115%; */
+  max-height: 100%;
+  /* height: 80%; */
+  /* background-size: contain; */
   /* aspect-ratio: 2070/3245; */
+  object-fit: cover;
+  border-radius: 25px;
 }
 
 .abt_me_photos {
   display: flex;
   flex-direction: row;
   width: 100%;
+  max-height: 800px;
 }
 
 .about_me p {
@@ -159,30 +161,52 @@ body {
   margin-top: 0px;
 }
 /* lab */
-.lab_panel {
+.hill_panel {
   display: flex;
   flex: 1;
   flex-direction: column;
   justify-content: space-around;
   background: url(Sources/UI/oligo.jpg) no-repeat center center;
   background-size: cover;
-  height: 1500px;
+  /* height: 1500px; */
   padding: 15px;
-  width: 100%;
   color: aliceblue;
   justify-content: center;
   align-items: center;
   outline: black 3px solid;
 }
 
+.chirayath_panel {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-around;
+  /* background: url(Sources/UI/oligo.jpg) no-repeat center center; */
+  background: url(Sources/Research/Chirayath/signal_map.jpg) no-repeat center center;
+  background-size: cover;
+  /* height: 1500px; */
+  padding: 15px;
+  color: aliceblue;
+  justify-content: center;
+  align-items: center;
+  outline: black 3px solid;
+  background-position: top left;
+}
+
+
 h1 {
   margin-top: 0px;
+  margin-bottom: 0px;
   font-family: "sf-mono";
   font-weight: bolder;
   font-size: 100px;
   width: 100%;
   text-align: center;
   color: aliceblue;
+}
+
+h2 {
+  margin-bottom: 0px;
 }
 
 .lab_panel h1 {
@@ -197,17 +221,18 @@ h1 {
   padding: 0px;
   border-radius: 15px;
   border: 3px white solid;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .description {
   display: flex;
   margin: 0px;
-  width: 80%;
+  width: 100%;
   height: 100%;
   background-color:  rgba(5, 5, 38, 0.75);
   align-items: center;
   justify-content: center;
+  border-radius: 15px;
 }
 
 .research_item p {
@@ -217,7 +242,7 @@ h1 {
   font-size: 20px;
 }
 
-.research_item img, .research_item video {
+.research_item img {
   margin: 0px;
   padding: 0px;
   width: 20%;
