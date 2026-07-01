@@ -9,6 +9,7 @@ body {
   padding: 0px;
   margin: 0px;
 }
+
 /* Splash */
 .splash {
   position: fixed;
@@ -21,6 +22,7 @@ body {
   color: aliceblue;
   text-align: center;
 }
+
 .splash.hidden {
   position: fixed;
   opacity: 0;
@@ -51,32 +53,28 @@ body {
   opacity: 0;
   animation: fadeIn 3s ease-out forwards;
 }
+
 /* title */
 .title_panel {
   background: url(Sources/UI/WebsiteBackground.jpg) no-repeat center center;
   background-size: cover;
-  height: 800px;
+  /* height: 800px; */
   width: 100%;
-  color: aliceblue;
+  /* color: aliceblue; */
   text-align: center;
   justify-content: center;
   outline: black 3px solid;
 }
-.title_logo {
-  background: url(Sources/Profile/NoahWhiteIcon.svg) no-repeat center center;
-  background-size: contain;
-  height: 92.5%;
-  width: 100%;
-  aspect-ratio: 31/14;
-}
+
 #title {
-  position: absolute;
+  /* position: absolute; */
   font-family: "sf-mono";
   font-weight: bolder;
   font-size: 100px;
-  top: 685px;
+  /* top: 685px; */
   width: 100%;
 }
+
 /* about me */
 
 .about_me {
@@ -96,7 +94,7 @@ body {
   flex-direction: row;
   justify-content: space-around;
   width: 100%;
-  padding: 0px; 
+  padding: 0px;
   margin: 0px;
 }
 
@@ -127,7 +125,7 @@ body {
   padding: 15px;
   font-family: "sf-mono";
   text-align: center;
-  background-color:  rgba(5, 5, 38, 0.75);
+  background-color: rgba(5, 5, 38, 0.75);
   border-radius: 15px;
   font-size: 20px;
 }
@@ -144,6 +142,7 @@ body {
   margin-top: -50px;
   border-radius: 25px;
 }
+
 .image_gallery video {
   max-width: 70%;
   max-height: 60%;
@@ -154,12 +153,15 @@ body {
 .left_gallery {
   float: left;
 }
+
 .right_gallery {
   float: right;
 }
+
 #gallery_starter {
   margin-top: 0px;
 }
+
 /* lab */
 .hill_panel {
   display: flex;
@@ -191,6 +193,23 @@ body {
   align-items: center;
   outline: black 3px solid;
   background-position: top left;
+}
+
+.app_dev_panel {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-around;
+  /* background: url(Sources/UI/oligo.jpg) no-repeat center center; */
+  background: url(Sources/UI/cornell.jpg) no-repeat center center;
+  background-size: cover;
+  /* height: 1500px; */
+  padding: 15px;
+  color: aliceblue;
+  justify-content: center;
+  align-items: center;
+  outline: black 3px solid;
+  background-position: center;
 }
 
 
@@ -229,7 +248,7 @@ h2 {
   margin: 0px;
   width: 100%;
   height: 100%;
-  background-color:  rgba(5, 5, 38, 0.75);
+  background-color: rgba(5, 5, 38, 0.75);
   align-items: center;
   justify-content: center;
   border-radius: 15px;
@@ -248,7 +267,7 @@ h2 {
   width: 20%;
   height: 100%;
   object-fit: fill;
-  background-color:  rgba(5, 38, 38, 1.0);
+  background-color: rgba(5, 38, 38, 1.0);
 }
 
 #left {
@@ -265,14 +284,14 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: url(Sources/UI/coding_background.png) repeat-y ;
+  background: url(Sources/UI/coding_background.png) repeat-y;
   background-size: cover;
   height: 100%;
   width: 100%;
   color: aliceblue;
   justify-content: center;
   align-items: center;
-  outline: black 3px solid;  
+  outline: black 3px solid;
 }
 
 .featureContainer {
@@ -325,14 +344,39 @@ h2 {
   color: aliceblue;
 }
 
+h3 {
+  font-family: "sf-mono";
+  /* font-weight: bolder; */
+  /* font-size: 50px; */
+  width: 100%;
+  text-align: center;
+  color: aliceblue;
+  margin-bottom: 2px;
+}
+
+.figure_gallery {
+  display: flex;
+  max-height: 500px;
+  gap: 0px;
+  justify-content: space-between;
+}
+
+.figure_gallery video {
+  width: 50%;
+}
+
+.figure_gallery img {
+  width: 50%;
+}
+
 .flat_gallery {
   display: flex;
   width: 100%;
   height: 100%;
   justify-content: space-between;
-} 
+}
 
- .filler_asset img {
+.filler_asset img {
   display: flex;
   width: 50%;
   height: 100%;
@@ -371,6 +415,7 @@ h2 {
   width: 33.33%;
   height: 100%;
 }
+
 .contact_item:hover {
   background-color: rgba(5, 5, 38, 0.75);
 }
@@ -407,12 +452,15 @@ a:hover {
   max-height: 256px;
   margin-bottom: 15px;
 }
+
 .contact_info h2 {
   height: 10%;
 }
+
 #fishy {
   border-radius: 25px;
 }
+
 .contact_info p {
   font-family: "sf-mono";
   font-size: 15px;
@@ -421,4 +469,45 @@ a:hover {
   width: 90%;
   padding: 15px;
   text-align: center;
+}
+
+.SHIMMER {
+  background: linear-gradient(-45deg, #00573936 30%, #8b00a3d5 50%, #00573936 70%);
+  background-size: 300%;
+  animation-name: shimmer;
+  animation-duration: 5000ms;
+  animation-timing-function: linear;
+  animation-delay: 0;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  border-radius: 5px;
+  text-align: center;
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 2px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border: 2px solid rgba(0, 255, 255, 0.478);
+}
+
+.SHIMMER p {
+  margin-bottom: 0px;
+  padding: 5px;
+  text-align: left;
+  color: rgb(137, 137, 255);
+}
+
+@keyframes shimmer {
+  0% {
+    background-position-x: 100%;
+  }
+
+  100% {
+    background-position-x: 0%;
+  }
 }
