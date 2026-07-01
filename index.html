@@ -20,18 +20,19 @@
   <div class="section">
     <div class="about_me">
       <p style="text-align: left;">
-        I am an incoming Master's Student at the NYU Courant Institute. I have a passion for computer Vision, computer
-        graphics, marine Ecology, and photography.
+        I am an incoming Master's Student at the NYU Courant Institute. I have a passion for computer vision, computer
+        graphics, marine ecology, and photography.
         My research attempts to bring the rapid innovation of the computer science community to applied fields, such as
-        marine ecology.
+        marine conservation.<br>
 
         In my 4 years at the Aircraft Center for Earth Studies with Dr. Chirayath, I worked towards this mission through
-        the development of novel methods to monitor marine life with drones.
-        Specifically, I focused on seafloor mapping, animal survey tools, and whale health assessment.
+        the development of novel methods that monitor marine life with drones.
+        Specifically, I focused on seafloor mapping, animal survey tools, and animal health and biometric assessment.
 
         I am currently focusing my efforts on 3D reconstruction and inverse rendering.
 
-        Here, you can find information about my research experience and personal projects.
+        Here, you can find information about my research experience and personal projects.<br>
+        If you are interested in my work or in collaboration, please do not hesitate to reach out!
       </p>
       <div class="abt_me_photos">
         <div class="about_me_info">
@@ -53,23 +54,48 @@
     <div class="chirayath_panel">
       <h1>ACES</h1>
       <div class="research_item">
-        <div class="description" id="left">
-          <p>
+        <div class="description" style="display: inline;">
+          <p style="margin-bottom: 0px; padding-bottom: 5px;">
             I worked as a software engineer at the Aircraft Center for Earth Studies at the University of Miami under
-            Dr. Ved Chirayath's advisorship for 4 years.
-            The background image of this section is a result from our Animal Detector. Silhouettes of detected animals
+            Dr. Ved Chirayath's advisorship for 4 years. The background image of this section is a result from our
+            Animal Detector. Silhouettes of detected animals
             are cut out and placed on top of the resolved
             benthic map from Fluid Lensing.
             This data was collected from Piti Bomb Holes, Guam, in the summer of 2022.
+
+            <br><br>
+            Many critical ocean ecosystems are threatened by human
+            activities and are currently at key turning points; however, many existing techniques for surveys are
+            time-consuming, which greatly limits the scale of analysis.
+            Many research questions require centimeter-scale imagery, so ACES uses drones, which enable surveys of
+            entire reefs in days or hours.<br><br>
+            Both drone and satellite imagery are plagued by distortions introduced by light crossing the air-sea
+            interface. Light refracting and reflecting at the surface breaks the key assumption
+            of most computer
+            vision methods–the assumption that light travels in straight lines (see figure below).
+          </p>
+          <iframe src="https://www.desmos.com/calculator/v29ygldn4t?embed" width="100%" height="500px"
+            style="border: 1px solid #ccc;;" frameborder=0></iframe>
+          <p style="padding-top: 0px; margin-bottom: 0px;">
+            This greatly complicates the analysis of
+            these images: imagine you are trying to sample the same portion of the seafloor multiple times,
+            but that location moves around. In some cases, the location may not be shown in
+            the image, or it may show up multiple times.
+            Many trivial problems become significantly more complex due to this phenomena.<br>
+
+            The ACES Lab attempts to remedy this through a method called "Fluid
+            Lensing", which
+            aggregates multiple images of the seafloor to find consistencies, much like algorithms
+            employed by astronomers.
           </p>
         </div>
       </div>
       <div class="research_item">
         <div class="description" id="left">
           <div>
-            <h2>Animal Detection</h2>
             <div style="display: flex; justify-content: space-between; width: 100%">
               <div style="width: 100%">
+                <h2>Animal Detection</h2>
                 <p>We present the first general-purpose animal detector for UAV footage of the ocean.
                   This technology isolates persistent anomalies in raw videos, leveraging a resolved image of the
                   seafloor (created using Fluid Lensing).
@@ -102,10 +128,10 @@
       <div class="research_item">
         <div class="description">
           <div style="width: 100%; text-align: center;">
-            <h2>Fluid Lensing & Data Viewer</h2>
             <div style="display: flex; justify-content: space-between; align-items: end;">
-              <div style="width: 75%; text-align: left;">
-                <p style="margin-bottom: 0px; padding-bottom: 0px;">
+              <div style="width: 67%; text-align: left;">
+                <h2>Fluid Lensing</h2>
+                <p style="margin-bottom: 0px; padding-bottom: 0px; padding-right: 0px; padding-top: 5px;">
                   The view of the seafloor from an aerial drone is greatly distorted by the air-sea interface.
                   With Fluid Lensing, we try to eliminate as many of these distortions as possible to study the state
                   and health of the seafloor.
@@ -114,20 +140,20 @@
                   greatly constrained by conditions.
                   In my time at ACES, I created a new version of Fluid Lensing that uses iterative image alignment and
                   statistical integration to achieve similar results, but at the scale of entire reefs. Part of this
-                  efficiency is also due to a scheduler that dynamically allocates CPU and GPU compute to accelerate the
+                  efficiency comes from a scheduler that dynamically allocates CPU and GPU compute to accelerate the
                   process.
-                  With my software, our team generated over 40 novel maps of over 12 reefs.
+                  With the software I wrote, our team generated over 40 novel maps of over 12 reefs.
                   <br>
                   On the right, you can see a
                   demonstration of
-                  our data viewer, which showcases most of the maps we created. In this demo, we show a timeseries of a
+                  our data viewer, which showcases these maps. In this demo, we show a timeseries of a
                   reef at unprecedent time-resolution.
                   This data was collected at Piti Bomb Holes, Guam, by Jonelle Sayama. You can click
                   on the video to visit the data-viewer.
                 </p>
               </div>
-              <div class="SHIMMER">
-                <a href="https://nemonet.info/data-viewer" style="width: 33%">
+              <div class="SHIMMER" style="margin: 0px; padding: 0px; width: 33%;">
+                <a href=" https://nemonet.info/data-viewer" style="padding: 0px;">
                   <p>
                     Click here to visit the data-viewer!
                   </p>
@@ -209,8 +235,7 @@
               Instead, the software tracks and compares the position of targets of opportunity (mouring buoys) to the
               GPS coordinates given by a DJI
               Mavic 3E to create a mapping between GPS coordinates and pixels. This can be used as a sort of camera
-              pose estimation for blending images, as if they were a single image focused on the sea surface (similar to
-              a synthetic aperture).
+              pose estimation for blending images.
             </p>
             <div class="SHIMMER">
               <a href="https://npikielny.github.io/SeaScan/overview.html">
@@ -302,7 +327,7 @@
         <div class="description">
           <div style="gap: 0px; padding-bottom: 0px;">
             <h2>MiDAR Communications</h2>
-            <p>
+            <p style="padding-left: 10px; padding-right: 10px; margin-bottom: 0px; padding-top: 5px;">
               The ACES lab works on MIDAR, a multispectral technique to actively map marine ecosystems.
               MIDAR can also be used for optical communications. Here is a demo of a custom encoding and decoding method
               that I created. Near the end of the video, the transmitter and receiver become desynchronized, so the
@@ -547,7 +572,7 @@
 
             <h3>MISC GPU Projects</h3>
             <div class="figure_gallery">
-              <div style="width: 50%;">
+              <div style="width: 50%; text-align: center;">
                 <video src="Sources/Projects/Misc/ConwayWebsite.mov" controls muted autoplay playsinline
                   style="max-width: 100%; max-height: 80%; height: 100%; width: auto;">Video not
                   supported</video>
