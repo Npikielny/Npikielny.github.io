@@ -20,10 +20,11 @@
   <div class="section">
     <div class="about_me">
       <p style="text-align: left;">
-        I am an incoming Master's Student at the NYU Courant Institute. I have a passion for computer vision, computer
+        I am an incoming Master's Student at the NYU Courant Institute. My passion and areas of experience are computer
+        vision, computer
         graphics, marine ecology, and photography.
-        My research attempts to bring the rapid innovation of the computer science community to applied fields, such as
-        marine conservation.<br>
+        My research aims to bring the rapid innovation of the computer science community to applied fields, such as
+        marine conservation.<br><br>
 
         In my 4 years at the Aircraft Center for Earth Studies with Dr. Chirayath, I worked towards this mission through
         the development of novel methods that monitor marine life with drones.
@@ -31,8 +32,9 @@
 
         I am currently focusing my efforts on 3D reconstruction and inverse rendering.
 
-        Here, you can find information about my research experience and personal projects.<br>
+        Here, you can find information about my research experience and personal projects.<br><br>
         If you are interested in my work or in collaboration, please do not hesitate to reach out!
+        You can email me at nap9928@nyu.edu.
       </p>
       <div class="abt_me_photos">
         <div class="about_me_info">
@@ -56,7 +58,8 @@
       <div class="research_item">
         <div class="description" style="display: inline;">
           <p style="margin-bottom: 0px; padding-bottom: 5px;">
-            I worked as a software engineer at the Aircraft Center for Earth Studies at the University of Miami under
+            I worked as a software engineer at the Aircraft Center for Earth Studies (ACES) at the University of Miami
+            under
             Dr. Ved Chirayath's advisorship for 4 years. The background image of this section is a result from our
             Animal Detector. Silhouettes of detected animals
             are cut out and placed on top of the resolved
@@ -64,23 +67,33 @@
             This data was collected from Piti Bomb Holes, Guam, in the summer of 2022.
 
             <br><br>
-            Many critical ocean ecosystems are threatened by human
-            activities and are currently at key turning points; however, many existing techniques for surveys are
-            time-consuming, which greatly limits the scale of analysis.
-            Many research questions require centimeter-scale imagery, so ACES uses drones, which enable surveys of
+            Coral reefs, seagrass beds, and other critical marine ecosystems are threatened by human
+            activities and are currently at key turning points; however, many survey techniques are
+            prohibitively time-consuming or provide inadequate resolution.
+            ACES addresses this problem through the use of drones, which enable centimeter-scale surveys of
             entire reefs in days or hours.<br><br>
-            Both drone and satellite imagery are plagued by distortions introduced by light crossing the air-sea
-            interface. Light refracting and reflecting at the surface breaks the key assumption
-            of most computer
-            vision methods–the assumption that light travels in straight lines (see figure below).
+            Both drone and satellite imagery are plagued by optical distortions and noise caused by the water. Most
+            notably, light
+            refracting and reflecting at the surface breaks a key assumption in most computer vision methods: light
+            travels in straight lines.
+            In the figure below, we see many of the problematic optical phenomena introduced by the sea.<br><br>
+            1. The ocean can be completely blocked by breaking waves, floating debris, or sun glint, and is
+            partially obscured by reflections of the sky.<br>
+            2. Light is refracted at the sea surface, which invalidates the linear-line assumption (problematic for
+            methods like structure-from-motion). It also complicates techniques that attempt to boost signal-to-noise
+            through a
+            combination of multiple samples.<br>
+            3. Sunlight can be focused or spread out, which can create sharply-lit, wave-like regions.<br>
+            4. Scattering in the water affects the perception of color and limits light returning from depth.
+
           </p>
-          <iframe src="https://www.desmos.com/calculator/v29ygldn4t?embed" width="100%" height="500px"
+          <iframe src="https://www.desmos.com/calculator/v29ygldn4t?embed" width="100%" height="600px"
             style="border: 1px solid #ccc;;" frameborder=0></iframe>
           <p style="padding-top: 0px; margin-bottom: 0px;">
             This greatly complicates the analysis of
-            these images: imagine you are trying to sample the same portion of the seafloor multiple times,
-            but that location moves around. In some cases, the location may not be shown in
-            the image, or it may show up multiple times.
+            these images: for example, a specific rock may not be shown in
+            an image, or it may show up multiple times in the same image. Moreover, this rock's position will be
+            randomly distributed within the set of images.
             Many trivial problems become significantly more complex due to this phenomena.<br>
 
             The ACES Lab attempts to remedy this through a method called "Fluid
@@ -96,7 +109,7 @@
             <div style="display: flex; justify-content: space-between; width: 100%">
               <div style="width: 100%">
                 <h2>Animal Detection</h2>
-                <p>We present the first general-purpose animal detector for UAV footage of the ocean.
+                <p>We present the first general-purpose animal detector for aerial footage of the ocean.
                   This technology isolates persistent anomalies in raw videos, leveraging a resolved image of the
                   seafloor (created using Fluid Lensing).
                   This method allows for the detection of any moving object in the data; however, we prioritize high
@@ -105,7 +118,8 @@
                   employ novel filtering techniques to remove many wave artifacts.
                   The constraints on the system may lead to many missed detections in difficult conditions, so we
                   argue that our tool is best used as a starting point for future methods that could train on our
-                  results.
+                  results. On the right, are two figures of a detected shark and fever of eagle rays in Tumon, Guam,
+                  2022.
                 </p>
                 <div class="SHIMMER">
                   <a href="https://npikielny.github.io/SeaScan/march_20_folium.html">
@@ -232,7 +246,7 @@
               It leverages targets of opportunity at the sea surface to make maps without the use
               of expensive structure-from-motion, which often fails on the sea surface.
 
-              Instead, the software tracks and compares the position of targets of opportunity (mouring buoys) to the
+              Instead, the software tracks and compares the position of targets of opportunity (mooring buoys) to the
               GPS coordinates given by a DJI
               Mavic 3E to create a mapping between GPS coordinates and pixels. This can be used as a sort of camera
               pose estimation for blending images.
@@ -284,7 +298,8 @@
               <p style="width: 65%;">
                 Refraction breaks the assumptions of many structure-from-motion solvers. Publicly available refractive
                 solvers are usually designed for correcting distortions created from refraction at the camera lens, not
-                at the sea surface. Here, we attempt to create a refractive solver for drones, where the main refractive
+                at the sea surface. <br>Here, we attempt to create a refractive solver for drones, where the main
+                refractive
                 event occurs at the air-sea interface.
 
                 We use a ray-based optimization framework to estimate scene parameters, such as drone altitude above
@@ -357,8 +372,8 @@
       </div>
 
       <div class="research_item">
-        <video src="Sources/Research/TraceEditor/TraceEditorDemo.mov" controls muted autoplay playsinline loop id="left"
-          style="width: 40%;">Video not supported</video>
+        <video src="Sources/Research/TraceEditor/TraceEditorDemo_small.mov" controls muted autoplay playsinline loop
+          id="left" style="width: 40%;">Video not supported</video>
         <div class="description" id="right">
           <p>
             While my second summer in Professor Hill's lab was entirely remote, I was able to leverage my computer
@@ -400,7 +415,8 @@
             a great learning tool, and it's a cute reminder of how far I've come!
           </p>
           <!-- <div class="image_gallery"> -->
-          <video class="stand_alone" src="Sources/Projects/utilitiesDemo.mov" controls muted autoplay playsinline>Video
+          <video class="stand_alone" src="Sources/Projects/utilitiesDemo_small.mov" controls muted autoplay
+            playsinline>Video
             not supported</video>
           <!-- </div> -->
         </div>
@@ -529,7 +545,7 @@
             <div class="figure_gallery">
               <img src="Sources/Projects/ComplexImages/MandelBrotWebsite.jpg"
                 style="width: 50%; height: auto; object-fit: contain;" />
-              <video src="Sources/Projects/ComplexImages/WebsiteJuliaSet.mov" controls muted autoplay playsinline
+              <video src="Sources/Projects/ComplexImages/WebsiteJuliaSet_small.mov" controls muted autoplay playsinline
                 style="width: 50%;">Video
                 not
                 supported</video>
@@ -542,7 +558,7 @@
             <h3>Ecosystem Simulation</h3>
             <div class="figure_gallery">
               <img src="Sources/Projects/Ecosystem/EcoLandscape.png" style="width: 50%;" />
-              <video src="Sources/Projects/Ecosystem/MarchEcoVid.mov" controls muted autoplay playsinline
+              <video src="Sources/Projects/Ecosystem/MarchEcoVid_small.mov" controls muted autoplay playsinline
                 style="width: 50%;">Video not
                 supported</video>
             </div>
@@ -573,13 +589,13 @@
             <h3>MISC GPU Projects</h3>
             <div class="figure_gallery">
               <div style="width: 50%; text-align: center;">
-                <video src="Sources/Projects/Misc/ConwayWebsite.mov" controls muted autoplay playsinline
+                <video src="Sources/Projects/Misc/ConwayWebsite_small.mov" controls muted autoplay playsinline
                   style="max-width: 100%; max-height: 80%; height: 100%; width: auto;">Video not
                   supported</video>
                 <h4>Conway's Game of Life</h4>
               </div>
               <div style="width: 50%;">
-                <video src="Sources/Projects/Misc/BoidsWebsite.mov" controls muted autoplay playsinline
+                <video src="Sources/Projects/Misc/BoidsWebsite_small.mov" controls muted autoplay playsinline
                   style="width: 100%;">Video not
                   supported</video>
                 <h4>Boids</h4>
